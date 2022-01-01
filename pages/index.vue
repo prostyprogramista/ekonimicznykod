@@ -1,11 +1,3 @@
 <template>
-  <Tutorial/>
+  <img src="~assets/indeks.jpg" />
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'IndexPage'
-})
-</script>
