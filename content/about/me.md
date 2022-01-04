@@ -16,4 +16,7 @@ if(cos.isEmpty()) {
 }
 ``` 
 
+> cytat
+
+
 i tak się żyje tutaj.

@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <nuxt-content :document="page" />
-    <img src="~assets/indeks.jpg" />
-    </div>
+<div>
+    <p>tekst</p>
+    <nuxt-content :document="page" />
+</div>
 </template>
 
 <script>

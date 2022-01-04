@@ -7,23 +7,30 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ekonomicznykod',
+    title: 'Ekonomiczny Kod',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pl'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { charset: 'UTF-8' },
+      { httpEquiv: 'X-UA-Compatible', content: 'IE=edge' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { href: 'https://fonts.cdnfonts.com/css/techno-agony', rel: 'stylesheet' },
+      { href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&family=Roboto:wght@100;400;500&display=swap', rel: 'stylesheet' }
+      // { rel: 'stylesheet', src: '@store/main.js'}
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/scss/_animations.scss',
+    '@/assets/scss/_colors.scss',
+    '@/assets/scss/_large.scss',
+    '@/assets/scss/_medium.scss',
+    '@/assets/scss/_small.scss',
+    '@/assets/scss/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
