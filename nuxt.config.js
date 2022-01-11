@@ -20,7 +20,11 @@ export default {
       { href: 'https://fonts.cdnfonts.com/css/techno-agony', rel: 'stylesheet' },
       { href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&family=Roboto:wght@100;400;500&display=swap', rel: 'stylesheet' },
       { href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap', rel: 'stylesheet' },
-      // { href: '~/assets/images/favicon/favicon.png', rel: 'icon', type: 'image/x-icon'  }
+      {rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png"},
+      {rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png"},
+      {rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png"},
+      {rel: "manifest", href: "/site.webmanifest"}
+      // { href: '/favicon.png', rel: 'icon', type: 'image/x-icon'  }
       // { rel: 'stylesheet', src: '@store/main.js'}
     ]
   },
