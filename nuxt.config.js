@@ -20,7 +20,7 @@ export default {
       { href: 'https://fonts.cdnfonts.com/css/techno-agony', rel: 'stylesheet' },
       { href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&family=Roboto:wght@100;400;500&display=swap', rel: 'stylesheet' },
       { href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap', rel: 'stylesheet' },
-      { href: '/images/favicon/favicon.png', rel: 'icon', type: 'image/x-icon'  }
+      // { href: '~/assets/images/favicon/favicon.png', rel: 'icon', type: 'image/x-icon'  }
       // { rel: 'stylesheet', src: '@store/main.js'}
     ]
   },
