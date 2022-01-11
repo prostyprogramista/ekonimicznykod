@@ -43,7 +43,14 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-  ],
+  ],      
+
+  generate: {
+    routes: [ '/about/me', 
+              '/about/blog',
+              '/database/sql_vs_nosql',
+            ]
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
