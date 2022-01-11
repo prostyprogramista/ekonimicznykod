@@ -2,7 +2,7 @@
   <header class="header">
     <div class="hero-img" v-bind:style="{ 'background-image': imageSrc }">
       <div class="header-arrow">
-        <img src="/images/icons/chevrons-down.svg" />
+        <img src="~/assets/images/icons/chevrons-down.svg" />
       </div>
       <div class="hero-shadow"></div>
       <div class="hero-text">
