@@ -1,4 +1,4 @@
-@import './colors';
+@import './light_colors';
 @import './animations';
 
 *,
@@ -32,6 +32,8 @@ body {
 // NAVIGATION
 
 .nav {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -49,7 +51,7 @@ body {
 		padding: 0px 20px;
 
 		img {
-			width: 80px;
+			width: 70px;
 		}
 	}
 
@@ -81,11 +83,11 @@ body {
 		}
 	}
 	.nav-links a:hover {
-		box-shadow: -5px 20px 21px -22px $dark-orange;
+		box-shadow: 0px 20px 21px -23px $dark-orange;
 	}
 
 	.logo:hover {
-		box-shadow: -5px 20px 21px -22px $dark-orange;
+		box-shadow: 0px 20px 21px -24px $dark-orange;
 	}
 
 	.burger {
@@ -122,7 +124,7 @@ body {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url('/imgs/header/header-small-1.jpg');
+		background-image: url('/images/header/header-small.jpg');
 		background-position: 0 0;
 		background-size: cover;
 		background-attachment: fixed;
@@ -177,7 +179,7 @@ body {
 	background-color: #fff;
 }
 
-.aboutBlog {
+.about-blog {
 	padding: 20px;
 	line-height: 30px;
 

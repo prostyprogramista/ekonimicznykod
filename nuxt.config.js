@@ -18,7 +18,9 @@ export default {
     ],
     link: [
       { href: 'https://fonts.cdnfonts.com/css/techno-agony', rel: 'stylesheet' },
-      { href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&family=Roboto:wght@100;400;500&display=swap', rel: 'stylesheet' }
+      { href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&family=Roboto:wght@100;400;500&display=swap', rel: 'stylesheet' },
+      { href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap', rel: 'stylesheet' },
+      { href: '/images/favicon/favicon.png', rel: 'icon', type: 'image/x-icon'  }
       // { rel: 'stylesheet', src: '@store/main.js'}
     ]
   },
@@ -26,10 +28,12 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/scss/_animations.scss',
-    '@/assets/scss/_colors.scss',
+    '@/assets/scss/_light_colors.scss',
+    '@/assets/scss/_dark_colors.scss',
     '@/assets/scss/_large.scss',
     '@/assets/scss/_medium.scss',
     '@/assets/scss/_small.scss',
+    '@/assets/scss/markdown.scss',
     '@/assets/scss/main.scss'
   ],
 
@@ -42,8 +46,6 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -53,13 +55,17 @@ export default {
 
   content: [
 
-  ], 
-  
+  ],
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  
+
   router: {
-     base: '/ekonomicznykod/'
+    base: '/ekonomicznykod/'
+  },
+
+  env: {
+    baseURL: process.env.BASE_URL
   }
 }

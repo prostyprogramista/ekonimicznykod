@@ -1,35 +1,20 @@
 <template>
-  <nav class="nav">
-    <div class="logo">
-      <img src="~/assets/images/logo/logo.png" alt="logo" />
+  <header class="header">
+    <div class="hero-img" v-bind:style="{ 'background-image': imageSrc }">
+      <div class="header-arrow">
+        <img src="/images/icons/chevrons-down.svg" />
+      </div>
+      <div class="hero-shadow"></div>
+      <div class="hero-text">
+        <h1><br />{{title}}</h1>
+        <p>{{content}}</p>
+      </div>
     </div>
-
-    <ul class="nav-links" v-bind:class="{ 'nav-active': isActive }">
-      <NuxtLink to="/about/me">Strona główna</NuxtLink>
-      <NuxtLink to="/about/me">Spis treści</NuxtLink>
-      <NuxtLink to="/about/me">O mnie</NuxtLink>
-      <NuxtLink to="/about/me">Kontakt</NuxtLink>
-    </ul>
-
-    <div v-on:click="handleNavigationBar" class="burger" v-bind:class="{ 'toggle': isActive }">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
+  </header>
 </template>
 
 <script>
 export default {
-  data: function() {
-    return {
-      isActive: false
-    }
-  }, 
-  methods: {
-    handleNavigationBar: function() {     
-      this.isActive = !this.isActive
-    }
-  }
+  props: ["title", "content", "imageSrc"]
 };
 </script>
