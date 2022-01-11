@@ -10,11 +10,11 @@ export default {
   props: ["path"],
   data: function () {
     return {
-      page: null,
+      page: [],
     };
   },
   async fetch() {
     this.page = await this.$content(this.path).fetch();
-  },
+  }
 };
 </script>

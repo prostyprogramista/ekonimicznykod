@@ -1,0 +1,16 @@
+<template>
+    <nuxt-content :document="article" />
+</template>
+
+<script>
+export default {
+  async asyncData ({ $content, app, params, error }) {
+    const path = `/${params.pathMatch || 'index'}`
+    const [article] = await $content({ deep: true }).where({ path }).fetch()
+
+    return {
+      article
+    }
+  }
+}
+</script>
