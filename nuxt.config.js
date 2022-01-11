@@ -45,13 +45,6 @@ export default {
   plugins: [
   ],      
 
-  generate: {
-    routes: [ '/about/me', 
-              '/about/blog',
-              '/database/sql_vs_nosql',
-            ]
-  },
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 

@@ -9,7 +9,7 @@ export default {
     const [article] = await $content({ deep: true }).where({ path }).fetch()
 
     if (!article) {
-      return error({ statusCode: 404, message: 'Article not found' })
+      return error({ statusCode: 404, message: `Article not found ${path} article: ${article}` })
     }
     
     return {
