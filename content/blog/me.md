@@ -51,7 +51,7 @@ obrazek:
 
 to jest mój kod `@Slf4j -> cos =>`:  
 
-
+abc
 
 ```java 
 @Override
