@@ -1,3 +1,3 @@
 <template>
-<Content path='about/me'/>
+<Content path='/about/me'/>
 </template>

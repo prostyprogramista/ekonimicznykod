@@ -6,13 +6,14 @@
 
 <script>
 export default {
-  async asyncData ({ $content, props }) {
-      console.log('To jest ścieżka' + props.path)
-    const page = await $content(props.path).fetch()
-
-    return {
-      page
+    props: ['path'], 
+    data: function() {
+      return {
+        page: null
+      }
+    },
+    async fetch() {
+      this.page = await this.$content(this.path).fetch()
     }
-  }
 }
 </script>
