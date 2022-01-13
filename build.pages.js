@@ -22,7 +22,11 @@ contentFiles
             .replace(contentDirectory, targetDirectory)
             .replace(markdownExtension, vueExtension)
 
-        const resultCommunicat = createOrReplaceFile(finalDirectiory, content, { path: `${markdownFileDir}/${markdownFileParsed.name}` })
+        const resultCommunicat = createOrReplaceFile(
+            finalDirectiory,
+            content,
+            { contentLocalization: `${markdownFileDir}/${markdownFileParsed.name}` }
+        )
 
         console.log(resultCommunicat)
     })

@@ -7,7 +7,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const article = await $content(path).fetch();
+    const article = await $content(contentLocalization).fetch();
 
     return { article };
   },
