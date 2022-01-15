@@ -58,7 +58,7 @@ Użyj trzech asterysków do ***mocnego wyróżnienia***.
 Lub, jeśli wolisz, ___użyj dwóch podkreślników___.
 
 obrazek:   
-![jakiś tekst](/images/header-big.jpg "typuł") 
+![jakiś tekst](/images/header/header-big-2.jpg "typuł") 
 
 to jest mój kod `@Slf4j -> cos =>`:  
 

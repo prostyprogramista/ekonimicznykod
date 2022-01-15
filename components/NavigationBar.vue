@@ -2,7 +2,7 @@
   <nav class="nav">
     <div class="logo">
       <NuxtLink to="/">
-        <img src="~/assets/images/logo/logo.png" alt="logo" />
+        <img src="/images/logo/logo.png" alt="logo" />
       </NuxtLink>
     </div>
 

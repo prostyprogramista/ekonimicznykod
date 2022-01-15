@@ -5,7 +5,7 @@
     <header class="header">
       <div class="hero-img">
         <div class="header-arrow">
-          <img src="~/assets/images/icons/chevrons-down.svg" />
+          <img src="~/assets/icons/chevrons-down.svg" />
         </div>
         <div class="hero-shadow"></div>
         <div class="hero-text">
