@@ -66,9 +66,9 @@ export default {
   build: {
   },
 
-  router: {
-    base: '/ekonomicznykod/'
-  },
+  // router: {
+  //   base: '/ekonomicznykod/'
+  // },
 
   env: {
     baseURL: process.env.BASE_URL
