@@ -59,16 +59,15 @@ export default {
   ],
 
   content: [
-
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
-  // router: {
-  //   base: '/ekonomicznykod/'
-  // },
+  router: {
+    base: '/ekonomicznykod/'
+  },
 
   env: {
     baseURL: process.env.BASE_URL
