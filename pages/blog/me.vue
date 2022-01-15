@@ -13,3 +13,7 @@ export default {
   },
 };
 </script>
+
+<router>
+    {"path":"/jakis-tam-routing"}
+</router>

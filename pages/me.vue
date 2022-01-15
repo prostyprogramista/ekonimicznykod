@@ -1,22 +1,18 @@
-<router> { path: '/jest-se-moj-widok' } </router>
+<router> path: '/cas'</router>
 
 <template>
   <div>
-
     <pre> {{ article }} </pre>
-    <h1> To jest SLUG: {{ slug }} </h1>
     <nuxt-content :document="article" />
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const slug = params.slug
+  async asyncData({ $content }) {
     const article = await $content("blog/me").fetch();
-    const sciezka = '/jest-se-moj-widok'
 
-    return { sciezka, slug, article };
+    return { article };
   },
 };
 </script>

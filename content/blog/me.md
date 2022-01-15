@@ -1,3 +1,14 @@
+---
+title: My custom page
+description: |
+    to jest opis z nową linią tutaj 
+    tutaj
+    i tutaj
+img: jakas/tam/path
+route: 
+    path: /jakis-tam-routing
+---
+
 # Nagłówek pierwszego poziomu
 
 jakiś tekst sobie tutaj jest dfs dsfgds  
