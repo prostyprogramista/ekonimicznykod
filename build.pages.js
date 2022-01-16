@@ -16,43 +16,61 @@ const contentFiles = getDirectoryFiles(contentDirectory)
 contentFiles
     .filter(file => getExtension(file) == markdownExtension)
     .forEach(markdownFile => {
-        var router
+        try {
+            const markdownVariables = yaml.load(
+                getContent(markdownFile)
+                    .split('---')[1]
+            )
 
-        const markdownVariables = yaml.load(
-            getContent(markdownFile)
-                .split('---')[1]
-        )
-        const markdownFileParsed = path.parse(markdownFile)
-        const markdownFileDir = markdownFileParsed.dir
-            .replace(contentDirectory, "")
-            .substring(1)
+            validation(markdownVariables)
 
-        if (markdownVariables.route != undefined) {
-            var routerContent = getContent(templateRouter)
+            const markdownFileParsed = path.parse(markdownFile)
+            const markdownFileDir = markdownFileParsed.dir
+                .replace(contentDirectory, "")
+                .substring(1)
+            const routerContent = getContent(templateRouter)
+            const router = replaceSentences(routerContent, { params: markdownVariables.route })
 
-            router = replaceSentences(routerContent, { params: markdownVariables.route })
+            const finalDirectiory = markdownFile.toLowerCase()
+                .replace(contentDirectory, targetDirectory)
+                .replace(markdownExtension, vueExtension)
+            const finalContent = replaceSentences(
+                content,
+                {
+                    contentLocalization: `'${markdownFileDir}/${markdownFileParsed.name}'`,
+                    router: router,
+                    postRoute: markdownVariables.route.path, 
+                    postTitle: markdownVariables.title
+                }
+            )
+
+            const result = createOrReplaceFile(
+                finalDirectiory,
+                finalContent
+            )
+
+            console.log(result)
+        } catch (err) {
+            console.log(`\nBUILD FINISHED - FAILED\n`)
+
+            throw err;
         }
-
-        const finalDirectiory = markdownFile.toLowerCase()
-            .replace(contentDirectory, targetDirectory)
-            .replace(markdownExtension, vueExtension)
-        const finalContent = replaceSentences(
-            content,
-            {
-                contentLocalization: `'${markdownFileDir}/${markdownFileParsed.name}'`,
-                router: router
-            }
-        )
-
-        const result = createOrReplaceFile(
-            finalDirectiory,
-            finalContent
-        )
-
-        console.log(result)
     })
 
-console.log(`\nBUILD FINISHED\n`)
+console.log(`\nBUILD FINISHED - SUCCEED\n`)
+
+function validation(jsonVariables) {
+    switch (true) {
+        case typeof jsonVariables.title != 'string':
+            throw TypeError(`Markdown must contains title variable as string!!!`)
+        case typeof jsonVariables.description != 'string':
+            throw TypeError(`Markdown must contains description variable as string!!!`)
+        case typeof jsonVariables.route != 'object':
+            throw TypeError(`Markdown must contains route variable as object!!!`)
+        case typeof jsonVariables.img != 'string':
+            throw TypeError(`Markdown must contains img variable as string!!!`)
+    }
+}
 
 function getDirectoryFiles(directory) {
     return fs.readdirSync(directory)
@@ -81,7 +99,7 @@ function replaceSentences(content, jsonVariables) {
         const typeOfValue = typeof value
 
         switch (true) {
-            case typeOfValue == 'object': 
+            case typeOfValue == 'object':
                 text = text.replace(key, JSON.stringify(value))
                 break;
             case typeOfValue == 'undefined':

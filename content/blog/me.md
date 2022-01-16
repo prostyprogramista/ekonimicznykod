@@ -5,6 +5,7 @@ description: |
     tutaj
     i tutaj
 img: jakas/tam/path
+slug: /jakis-tam-routing-2
 route: 
     path: /jakis-tam-routing
 ---

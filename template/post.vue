@@ -1,6 +1,7 @@
 <template>
   <div>
     <nuxt-content :document="article" />
+    <Chat title="postTitle" id="postRoute" />
   </div>
 </template>
 
