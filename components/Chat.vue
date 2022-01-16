@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>{{title}}</p>
     <div id="disqus_thread"></div>
   </div>
 </template>
@@ -8,13 +7,11 @@
 <script>
 export default {
   props: [ 'id', 'title' ],
-  beforeCreate() {
-  },
   created() {
-    const props = { id: this.id, title: this.title }
+    const props = { id: this.id, title: this.title };
 
     window.disqus_config = function () {
-      this.page.identifier = props.id; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.identifier = props.id;
       this.page.title = props.title;
     };
 

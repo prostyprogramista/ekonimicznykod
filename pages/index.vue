@@ -29,7 +29,7 @@
             Sporadycznie na blogu mogą się również pojawiać tematy odbiegające od programowania - związane z moimi zainteresowaniami :)
           </p>
           <p>
-            W poszczególnych sekcjach gurnego paska nawigującego znajdziesz: 
+            Blog podzielony jest na następujące sekcje: 
             <ul>
               <b># Strona główna - </b> znajdziesz tam wszystkie ostatnio opublikowane posty. </br>
               <b># Spis treści - </b> w tej sekcji znajdują się wsyzstkie artykuły związane z szerokopojętym programowaniem, upożądkowane tematycznie. </br>
