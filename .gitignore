@@ -89,5 +89,5 @@ sw.*
 # Vim swap files
 *.swp
 
-# Odt draw files
-*.odt
+# Draw files
+draws
