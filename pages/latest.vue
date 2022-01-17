@@ -21,5 +21,5 @@ export default {
 </script>
 
 <router>
-    {"path":"/latest"}
+    {"path":"/ostatnie"}
 </router>

@@ -10,7 +10,7 @@ route:
     path: /jakis-tam-routing
 ---
 
-# Nagłówek pierwszego poziomu
+# Nagłówek pierwszego poziomu `@Override`
 
 jakiś tekst sobie tutaj jest dfs dsfgds  
 gdfsgfhdgfh  
@@ -21,7 +21,7 @@ jgfjgfutyjhg
 
 To jest [przykładowy link](http://przykład.pl/ "Z Tytułem"). 
 
-## Nagłówek drugiego poziomu
+## Nagłówek drugiego poziomu  `@Override`
 
 Now is the time for all good men to come to
 the aid of their country. This is just a
@@ -29,7 +29,7 @@ regular paragraph.
 
 Pójdźże, kiń tę chmurność w głąb flaszy!
 
-### Nagłówek trzeciego poziomu
+### Nagłówek trzeciego poziomu `@Override`
 
 > To jest blok cytatu.
 >
@@ -61,7 +61,9 @@ Lub, jeśli wolisz, ___użyj dwóch podkreślników___.
 obrazek:   
 ![jakiś tekst](/ekonomicznykod/images/header/header-big-2.jpg "typuł") 
 
-to jest mój kod `@Slf4j -> cos =>`:  
+to jest mój koD `@Slf4j -> cos => function() = console.log()`:   afsd sda  
+ fsdf safas fsa fsa
+  fsda fsa s s saf
 
 abc
 
@@ -69,6 +71,7 @@ abc
 @Override
 private void myMethod() {
     cos != 0
+
     const cos = function () => {
         return "cos";
     }
@@ -98,7 +101,7 @@ private myMethod(): Integer {
 
 Lista normalna: 
 - czerwony, 
-- zielony dzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, 
+- zielony dzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, 
 - niebieski
 
 Lista numerowana: 

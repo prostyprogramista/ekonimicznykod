@@ -7,11 +7,11 @@
     </div>
 
     <ul class="nav-links" v-bind:class="{ 'nav-active': isActive }">
-      <NuxtLink to="/about/me">Strona główna</NuxtLink>
-      <NuxtLink to="/about/me">Spis treści</NuxtLink>
-      <NuxtLink to="/about/me">Literatura</NuxtLink>
-      <NuxtLink to="/post2">Inne</NuxtLink>
-      <NuxtLink to="/post">Kontakt</NuxtLink>
+      <NuxtLink to="/ostatnie">Najnowsze</NuxtLink>
+      <NuxtLink to="/spis-tresci">Spis treści</NuxtLink>
+      <NuxtLink to="/biblioteczka">Literatura</NuxtLink>
+      <NuxtLink to="/">Inne</NuxtLink>
+      <NuxtLink to="/kontakt">Kontakt</NuxtLink>
     </ul>
 
     <div

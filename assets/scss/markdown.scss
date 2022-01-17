@@ -3,16 +3,26 @@
 .nuxt-content  {
     padding: 20px;
     background-color: $background-content-color;
+
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
     
+    code {            
+        font-family: 'Fira Code', monospace;
+    }
+
     *::selection {
         background-color: $selection-background-color;
         color: $selection-text-color;
     }
 
     h1 {
-        padding-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
-        font-size: 32px;
+        font-family: 'Diamond', sans-serif;
+        font-size: 36px;
 
         &:after {
             content: '';
@@ -29,20 +39,20 @@
     h2 {
         padding-top: 10px;
 
-        font-size: 28px;
+        font-family: 'Diamond', sans-serif;
+        font-size: 32px;
     }
 
     h3 {
         padding-top: 10px;
 
-        font-size: 24px;
+        font-family: 'Diamond', sans-serif;
+        font-size: 28px;
     }
 
     p {
         padding-top: 10px;
         padding-bottom: 10px;
-
-        font-size: 18px;
 
         img {
             border-radius: 7px;
@@ -83,13 +93,8 @@
             }
         }
 
-        code {
-            padding-left: 4px;
-            padding-right: 4px;
-            font-family: 'Fira Code', monospace;
-
-            background-color: $code-background-color;
-            border-radius: 6px 6px 6px 6px;
+        code {            
+            color: $code-block-text-color;
         }
     }
 
@@ -100,13 +105,6 @@
             border-radius: 12px 12px 12px 12px;
 
             code {
-                font-family: 'Fira Code', monospace;
-
-
-                // span.token.punctuation {
-                //     background-color: aquamarine;
-                // }
-
                 span.token.operator {
                     background-color: $code-block-background-color;
                 }
@@ -117,7 +115,6 @@
         padding-top: 5px;
         padding-bottom: 5px;
         
-        font-size: 20px;
         display: block;
         counter-increment: inst;
         text-align: left;
@@ -130,7 +127,7 @@
             background: $orange-medium;
             border-radius: 4px 20px 20px 3px;
 
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Fira Code', monospace;
             font-style: italic;
             text-align: center;
             color: white;
