@@ -41,6 +41,9 @@ export default {
     '@/assets/scss/_small.scss',
     '@/assets/scss/markdown.scss',
     '@/assets/scss/navigation.scss',
+    '@/assets/scss/footer.scss',
+    '@/assets/scss/article.scss',
+    '@/assets/scss/chat.scss',
     '@/assets/scss/main.scss'
   ],
 

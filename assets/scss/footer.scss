@@ -1,0 +1,69 @@
+@import './light_colors';
+
+// footer {    
+//     display: grid;
+//     grid-template-columns: 1fr repeat(10, 130px) 1fr;
+//     grid-template-rows: 1fr 2em;
+
+    
+//     box-shadow: 0px -5px 3px -5px $shadow-color;
+
+// 	color: $white-color;
+// 	background-color: $footer-background-color;
+
+// 	div {
+//         grid-column: 2 / 12;
+//         grid-row: 1;
+// 		min-height: 20vh;
+
+// 	}
+	
+// 	p {
+//         grid-row: 2;
+//         grid-column: 2 / 12;
+
+//         display: flex;
+//         align-items: center;
+
+// 		border-top: 1px solid rgb(182, 182, 182);
+// 	}
+// }
+
+
+@media (min-width: 1366px) {
+    footer {    
+        display: grid;
+        grid-template-columns: 1fr repeat(10, 130px) 1fr;
+        grid-template-rows: 1fr 2em;
+    
+        
+        box-shadow: 0px -5px 3px -5px $shadow-color;
+    
+        color: $white-color;
+        background-color: $footer-background-color;
+    
+        div.content {
+            grid-column: 2 / 12;
+            grid-row: 1;
+            min-height: 20vh;
+    
+        }
+        
+        div.name {
+            grid-column: 1 / -1;
+            grid-row: 2;
+
+            display: grid;
+            grid-template-columns: 1fr repeat(10, 130px) 1fr;
+            
+            border-top: 1px solid rgb(182, 182, 182);
+
+            p {
+                grid-column: 2 / 12;
+        
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

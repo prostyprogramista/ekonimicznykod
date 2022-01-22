@@ -28,7 +28,7 @@ html {
 
 }
 @media (min-width: 1024px) {
-	html {
+	main {
 		display: grid;
 		
 		grid-template-columns: repeat(12, 1fr);
@@ -38,5 +38,7 @@ html {
 
 }
 @media (min-width: 1366px) {
-
+	main {
+		grid-template-columns: 1fr repeat(10, 130px) 1fr;
+	}
 }
