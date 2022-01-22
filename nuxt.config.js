@@ -40,6 +40,7 @@ export default {
     '@/assets/scss/_medium.scss',
     '@/assets/scss/_small.scss',
     '@/assets/scss/markdown.scss',
+    '@/assets/scss/navigation.scss',
     '@/assets/scss/main.scss'
   ],
 

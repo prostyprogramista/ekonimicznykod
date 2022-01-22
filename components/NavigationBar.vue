@@ -1,27 +1,29 @@
 <template>
-  <nav class="nav">
-    <div class="logo">
-      <NuxtLink to="/">
-        <img src="/ekonomicznykod/images/logo/logo.png" alt="logo" />
-      </NuxtLink>
-    </div>
+  <nav>
+    <div class="navigation">
+      <div class="logo">
+        <NuxtLink to="/">
+          <img src="/ekonomicznykod/images/logo/logo.png" alt="logo" />
+        </NuxtLink>
+      </div>
 
-    <ul class="nav-links" v-bind:class="{ 'nav-active': isActive }">
-      <NuxtLink to="/ostatnie">Najnowsze</NuxtLink>
-      <NuxtLink to="/spis-tresci">Spis treści</NuxtLink>
-      <NuxtLink to="/biblioteczka">Literatura</NuxtLink>
-      <NuxtLink to="/">Inne</NuxtLink>
-      <NuxtLink to="/kontakt">Kontakt</NuxtLink>
-    </ul>
+      <div class="links" v-bind:class="{ 'display': isActive }">
+        <NuxtLink to="/ostatnie">Najnowsze</NuxtLink>
+        <NuxtLink to="/spis-tresci">Spis treści</NuxtLink>
+        <NuxtLink to="/biblioteczka">Literatura</NuxtLink>
+        <NuxtLink to="/">Inne</NuxtLink>
+        <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+      </div>
 
-    <div
-      v-on:click="handleNavigationBar"
-      class="burger"
-      v-bind:class="{ toggle: isActive }"
-    >
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
+      <div
+        v-on:click="handleNavigationBar"
+        class="burger"
+        v-bind:class="{ toggle: isActive }"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </div>
   </nav>
 </template>

@@ -6,12 +6,17 @@ $orange-light: #ffb74d;
 $orange-medium: #ff9800;
 $orange-hightlight: #f57c00;
 
+$dark-blue: #37474f;
+
 $deep-orange: #FF3D00;
+
+$shadow-color: rgba(66, 68, 90, 1);
 
 $code-block-text-color: $deep-orange;
 
 $grey-hightlight: #757575;
 
+$background-navigation-color: white;
 $background-content-color: #fafafa;
 
 $code-background-color: #eeeeee;
@@ -19,7 +24,7 @@ $code-background-color: #eeeeee;
 $code-block-background-color: #f5f5f5;
 $code-block-border-color: #bdbdbd;
 
-$selection-background-color: #37474f;
+$selection-background-color: $dark-blue;
 $selection-text-color: white;
 
 $hiperlink-color: $orange-hightlight;
@@ -34,5 +39,5 @@ $hiperlink-active-selection-color: $orange-medium;
 $hiperlink-hover-color: $orange-light;
 $hiperlink-hover-selection-color: $orange-hightlight;
 
-
+$footer-background-color: $dark-blue
 

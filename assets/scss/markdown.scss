@@ -115,7 +115,8 @@
         padding-top: 5px;
         padding-bottom: 5px;
         
-        display: block;
+        display: flex;
+
         counter-increment: inst;
         text-align: left;
 
@@ -131,6 +132,8 @@
             font-style: italic;
             text-align: center;
             color: white;
+
+            height: 1.45em;
         }
 
     }
@@ -138,7 +141,8 @@
     ul {
         li:before {
             content: "";
-            padding-left: 23px;
+            padding-left: 1.55em;
+            
         }
     }
 
