@@ -1,68 +1,84 @@
 @import './light_colors';
 
-// footer {    
-//     display: grid;
-//     grid-template-columns: 1fr repeat(10, 130px) 1fr;
-//     grid-template-rows: 1fr 2em;
+footer {    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 2em;
 
-    
-//     box-shadow: 0px -5px 3px -5px $shadow-color;
+    margin-top: 20px;
 
-// 	color: $white-color;
-// 	background-color: $footer-background-color;
+	background-color: $footer-background-color;
+    box-shadow: 0px -5px 40px -24px $shadow-color;
 
-// 	div {
-//         grid-column: 2 / 12;
-//         grid-row: 1;
-// 		min-height: 20vh;
+	div.content {
+        grid-column: 1 / -1;
+        grid-row: 1;
 
-// 	}
-	
-// 	p {
-//         grid-row: 2;
-//         grid-column: 2 / 12;
-
-//         display: flex;
-//         align-items: center;
-
-// 		border-top: 1px solid rgb(182, 182, 182);
-// 	}
-// }
-
-
-@media (min-width: 1366px) {
-    footer {    
-        display: grid;
-        grid-template-columns: 1fr repeat(10, 130px) 1fr;
-        grid-template-rows: 1fr 2em;
-    
+        margin: 10px;
         
-        box-shadow: 0px -5px 3px -5px $shadow-color;
-    
-        color: $white-color;
-        background-color: $footer-background-color;
-    
+	    color: $text-color-contrast;
+	}
+	
+    div.name {
+        grid-column: 1 / -1;
+        grid-row: 2;
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        
+        border-top: 1px solid $separator-line-color;
+        
+        p {
+            grid-column: 1 / -1;
+
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+
+	        color: $text-color-contrast-light;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+    footer {                    
         div.content {
-            grid-column: 2 / 12;
-            grid-row: 1;
-            min-height: 20vh;
-    
+            grid-column: 2 / -2;    
+
+            margin: 0px;
         }
         
         div.name {
-            grid-column: 1 / -1;
-            grid-row: 2;
+            p {
+                grid-column: 2 / -2;
 
-            display: grid;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    footer {    
+        grid-template-columns: 1fr repeat(10, 130px) 1fr;    
+                
+        div.content {
+            grid-column: 2 / -2;   
+
+            margin: 0px; 
+        }
+        
+        div.name {
             grid-template-columns: 1fr repeat(10, 130px) 1fr;
-            
-            border-top: 1px solid rgb(182, 182, 182);
 
             p {
-                grid-column: 2 / 12;
-        
-                display: flex;
-                align-items: center;
+                grid-column: 2 / -2;
+
+                margin: 0px;
             }
         }
     }

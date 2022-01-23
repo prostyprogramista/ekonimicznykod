@@ -1,20 +1,24 @@
-$dark-color: #313638;
-$white-color: #fdfbfb;
-$dark-orange: #f26419;
+$text-color: rgb(25, 25, 25);
+$text-color-light: rgb(75, 75, 75);
+$text-color-contrast: rgb(245, 245, 245);
+$text-color-contrast-light: rgb(200, 200, 200);
 
 $orange-light: #ffb74d;
 $orange-medium: #ff9800;
 $orange-hightlight: #f57c00;
 
-$dark-blue: #37474f;
+$grey-light: #d6d6d6;
+$grey-medium: #b3b3b3;
+$grey-hightlight: #757575;
 
 $deep-orange: #FF3D00;
+
+$dark-blue: #37474f;
 
 $shadow-color: rgba(66, 68, 90, 1);
 
 $code-block-text-color: $deep-orange;
 
-$grey-hightlight: #757575;
 
 $background-navigation-color: white;
 $background-content-color: #fafafa;
@@ -22,16 +26,16 @@ $background-content-color: #fafafa;
 $code-background-color: #eeeeee;
 
 $code-block-background-color: #f5f5f5;
-$code-block-border-color: #bdbdbd;
+$code-block-border-color: $grey-medium;
 
 $selection-background-color: $dark-blue;
-$selection-text-color: white;
+$selection-text-color: $text-color-contrast;
 
 $hiperlink-color: $orange-hightlight;
 $hiperlink-selection-color: $orange-light;
 
-$hiperlink-visited-color: #616161;
-$hiperlink-visited-selection-color: #e0e0e0;
+$hiperlink-visited-color: $grey-hightlight;
+$hiperlink-visited-selection-color: $grey-light;
 
 $hiperlink-active-color: $orange-medium;
 $hiperlink-active-selection-color: $orange-medium;
@@ -39,5 +43,6 @@ $hiperlink-active-selection-color: $orange-medium;
 $hiperlink-hover-color: $orange-light;
 $hiperlink-hover-selection-color: $orange-hightlight;
 
-$footer-background-color: #2b363b;
+$footer-background-color: #000913;
 
+$separator-line-color: $grey-hightlight;

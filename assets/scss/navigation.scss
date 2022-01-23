@@ -59,7 +59,6 @@ nav {
                 padding: 15px;
                 width: 100%;
 
-                color: $dark-color;
                 font-size: 0.7rem;
                 text-align: center;
                 text-decoration: none;
@@ -89,7 +88,7 @@ nav {
                 width: 35px;
                 height: 3px;
 
-                background-color: $dark-color;
+                background-color: $text-color;
 
                 transition: all 0.3s ease;
             }
