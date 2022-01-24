@@ -6,10 +6,12 @@
 
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 16px;
-
     line-height: 1.5em;
     
     code {            
+        margin-left: 2px;
+        margin-right: 2px;
+
         font-family: 'Fira Code', monospace;
     }
 
@@ -24,7 +26,15 @@
 
         font-family: 'Diamond', sans-serif;
         font-size: 36px;
-        line-height: 1.2em;
+        line-height: 1.15em;
+
+        code {
+            font-size: 36px;
+        }
+
+        a {
+            display: none;
+        }
 
         &:after {
             content: '';
@@ -43,7 +53,15 @@
 
         font-family: 'Diamond', sans-serif;
         font-size: 32px;
-        line-height: 1.2em;
+        line-height: 1.15em;
+
+        a {
+            display: none;
+        }
+
+        code {
+            font-size: 32px;
+        }
     }
 
     h3 {
@@ -51,7 +69,15 @@
 
         font-family: 'Diamond', sans-serif;
         font-size: 28px;
-        line-height: 1.2em;
+        line-height: 1.15em;
+
+        a {
+            display: none;
+        }
+
+        code {
+            font-size: 28px;
+        }
     }
 
     p {
@@ -115,6 +141,7 @@
             }
         }
     }
+
     li {
         padding-top: 5px;
         padding-bottom: 5px;

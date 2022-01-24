@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <nuxt-content :document="article" />
+  <main>
+    <article>
+      <nuxt-content :document="article" />
+    </article>
     <Chat title="My custom page" id="/jakis-tam-routing" />
-  </div>
+  </main>
 </template>
 
 <script>

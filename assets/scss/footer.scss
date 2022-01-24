@@ -43,12 +43,15 @@ footer {
 @media (min-width: 768px) {
     footer {                    
         div.content {
-            margin: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
         
         div.name {
             p {
-                margin: 20px;
+                margin-left: 20px;
             }
         }
     }
@@ -59,7 +62,8 @@ footer {
         div.content {
             grid-column: 2 / -2;    
 
-            margin: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
         }
         
         div.name {
@@ -74,22 +78,10 @@ footer {
 
 @media (min-width: 1366px) {
     footer {    
-        grid-template-columns: 1fr repeat(10, 130px) 1fr;    
+        grid-template-columns: 1fr repeat(10, 130px) 1fr;
                 
-        div.content {
-            grid-column: 2 / -2;   
-
-            margin: 0px; 
-        }
-        
         div.name {
             grid-template-columns: 1fr repeat(10, 130px) 1fr;
-
-            p {
-                grid-column: 2 / -2;
-
-                margin: 0px;
-            }
         }
     }
 }

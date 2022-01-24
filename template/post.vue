@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <nuxt-content :document="article" />
+  <main>
+    <article>
+      <nuxt-content :document="article" />
+    </article>
     <Chat title="postTitle" id="postRoute" />
-  </div>
+  </main>
 </template>
 
 <script>
