@@ -6,7 +6,8 @@
 
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 16px;
-    line-height: 150%;
+
+    line-height: 1.5em;
     
     code {            
         font-family: 'Fira Code', monospace;
@@ -23,13 +24,14 @@
 
         font-family: 'Diamond', sans-serif;
         font-size: 36px;
+        line-height: 1.2em;
 
         &:after {
             content: '';
 
             padding-top: 10px;
             border-radius: 2px;
-            border-bottom: 1px solid rgb(182, 182, 182);
+            border-bottom: 1px solid $separator-line-color;
             
             display: block;
             width: 100%;
@@ -41,6 +43,7 @@
 
         font-family: 'Diamond', sans-serif;
         font-size: 32px;
+        line-height: 1.2em;
     }
 
     h3 {
@@ -48,6 +51,7 @@
 
         font-family: 'Diamond', sans-serif;
         font-size: 28px;
+        line-height: 1.2em;
     }
 
     p {

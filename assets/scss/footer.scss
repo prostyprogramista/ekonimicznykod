@@ -14,7 +14,7 @@ footer {
         grid-column: 1 / -1;
         grid-row: 1;
 
-        margin: 10px;
+        margin: 5px;
         
 	    color: $text-color-contrast;
 	}
@@ -33,7 +33,7 @@ footer {
 
             display: flex;
             align-items: center;
-            margin-left: 10px;
+            margin-left: 5px;
 
 	        color: $text-color-contrast-light;
         }
@@ -41,7 +41,17 @@ footer {
 }
 
 @media (min-width: 768px) {
-
+    footer {                    
+        div.content {
+            margin: 20px;
+        }
+        
+        div.name {
+            p {
+                margin: 20px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1024px) {

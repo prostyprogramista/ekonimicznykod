@@ -17,17 +17,15 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
     ],
     link: [
-      { href: 'https://fonts.cdnfonts.com/css/techno-agony', rel: 'stylesheet' },
-      { href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap', rel: 'stylesheet' },
-      { href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap', rel: 'stylesheet' },
-      { href:"http://fonts.cdnfonts.com/css/bai-jamjuree-2", rel:"stylesheet" },
-      { href:"http://fonts.cdnfonts.com/css/diamond", rel:"stylesheet" },
-      {rel: "apple-touch-icon", sizes: "180x180", href: "/ekonomicznykod/images/favicon/apple-touch-icon.png"},
-      {rel: 'icon', type: 'image/png', sizes: "32x32", href: '/ekonomicznykod/images/favicon/favicon-32x32.png'},
-      {rel: "icon", type: "image/png", sizes: "16x16", href: "/ekonomicznykod/images/favicon/favicon-16x16.png"},
-      {rel: "manifest", href: "/ekonomicznykod/images/favicon/site.webmanifest"}
-      // { href: '/favicon.png', rel: 'icon', type: 'image/x-icon'  }
-      // { rel: 'stylesheet', src: '@store/main.js'}
+      { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/techno-agony' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/bai-jamjuree-2' },
+      { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/diamond' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/ekonomicznykod/images/favicon/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/ekonomicznykod/images/favicon/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/ekonomicznykod/images/favicon/favicon-16x16.png' },
+      { rel: 'manifest', href: '/ekonomicznykod/images/favicon/site.webmanifest' }
     ]
   },
 
@@ -49,7 +47,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-  ],      
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
