@@ -1,12 +1,11 @@
 @keyframes scrollDown {
-
     from {
-        transform: translate(-50%, -50%);
+        transform: translate(0%, 0%);
         opacity: .5;
     }
 
     to {
-        transform: translate(-50%, -22%);
+        transform: translate(0%, 20px);
         opacity: 0;
     }
 }

@@ -92,7 +92,7 @@ function getExtension(name) {
 
 function replaceSentences(content, jsonVariables) {
     const keys = Object.keys(jsonVariables)
-    var text = content
+    let text = content
 
     keys.forEach(key => {
         const value = jsonVariables[key]

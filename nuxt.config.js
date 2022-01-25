@@ -21,7 +21,7 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/bai-jamjuree-2' },
-      { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/diamond' },
+      { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/ubuntu-condensed-2' },
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/ekonomicznykod/images/favicon/apple-touch-icon.png' },
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/ekonomicznykod/images/favicon/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/ekonomicznykod/images/favicon/favicon-16x16.png' },
@@ -34,15 +34,14 @@ export default {
     '@/assets/scss/_animations.scss',
     '@/assets/scss/_light_colors.scss',
     '@/assets/scss/_dark_colors.scss',
-    '@/assets/scss/_large.scss',
-    '@/assets/scss/_medium.scss',
-    '@/assets/scss/_small.scss',
     '@/assets/scss/markdown.scss',
     '@/assets/scss/navigation.scss',
     '@/assets/scss/footer.scss',
     '@/assets/scss/article.scss',
     '@/assets/scss/chat.scss',
-    '@/assets/scss/main.scss'
+    '@/assets/scss/header.scss',
+    '@/assets/scss/main.scss', 
+    '@/assets/scss/pages/index.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
