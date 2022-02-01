@@ -1,0 +1,67 @@
+@import '~/assets/scss/light_colors';
+
+.about-me-page {
+	h1 {
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		margin-top: 2%;
+	}
+
+	h1:after {
+		content: '';
+		border-bottom: 2px solid $orange-light;
+		padding-top: 2%;
+        margin-bottom: 1%;
+		width: 75%;
+	}
+
+	p {
+		padding: 1% 0%;
+		font-size: 1rem;
+	}
+
+    a {
+        color: $hiperlink-color;
+        text-decoration: none;
+        transition: all .2s ease-in;
+
+        &::selection {
+            color: $hiperlink-selection-color;
+        }
+
+        &:active {
+            color: $hiperlink-active-color;
+            
+            &::selection {
+                color: $hiperlink-active-selection-color;
+            }
+        }
+
+        &:hover {
+            color: $hiperlink-hover-color;
+            
+            &::selection {
+                color: $hiperlink-hover-selection-color;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+	.about-me-page {
+        h1:after {
+            width: 50%;
+        }
+	}
+}
+
+@media (min-width: 1024px) {
+	.about-me-page {
+        grid-column: 2 / -2;
+
+        h1:after {
+            width: 40%;
+        }
+	}
+}

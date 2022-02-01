@@ -1,10 +1,20 @@
 <template>
   <nav>
     <div class="navigation">
-      <div class="logo">
+      <!-- <div class="logo">
         <NuxtLink to="/">
           <img src="/ekonomicznykod/images/logo/logo.png" alt="logo" />
         </NuxtLink>
+      </div> -->
+      
+      <div class="logo">
+        <div class="logo-icon-background">
+          <div class="logo-icon-shadow"> 
+            <NuxtLink to="/">
+              <img class="logo-icon"/>  
+            </NuxtLink>
+          </div>
+        </div>
       </div>
 
       <div class="links" v-bind:class="{ 'display': isActive }">

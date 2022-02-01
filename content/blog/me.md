@@ -31,11 +31,9 @@ Pójdźże, kiń tę chmurność w głąb flaszy!
 
 ### Nagłówek trzeciego poziomu Nagłówek drugiego poziom  Nagłówek drugiego poziom  Nagłówek drugiego poziom  `@Override`
 
-> To jest blok cytatu.
+> To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu.
 >
 > To jest drugi akapit w bloku cytatu.
->
-> ## To jest H2 w bloku cytatu
 
 
 To jest [przykładowy link](http://przykład.pl/ "Z Tytułem"). 
@@ -59,13 +57,15 @@ Użyj trzech asterysków do ***mocnego wyróżnienia***.
 Lub, jeśli wolisz, ___użyj dwóch podkreślników___.
 
 obrazek:   
-![jakiś tekst](/ekonomicznykod/images/header/header-big-2.jpg "typuł") 
+![jakiś tekst](/ekonomicznykod/images/header/header-big-2.jpg "typuł")
 
 to jest mój koD `@Slf4j -> cos => function() = console.log()`:   afsd sda  
  fsdf safas fsa fsa
   fsda fsa s s saf
 
 abc
+
+<Test>
 
 ```java 
 @Override
@@ -95,9 +95,35 @@ private myMethod(): Integer {
     }
 }
 ```
-# To ja
+```typescript
+fun cos() => {
+    jakas()
+}
+```
 
-> cytat
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned asjdakfdas fsd dkfg | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+:tada: :100:
+
+
+> Classic markup: :wink: :cry: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+
+
+
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+
+
 
 Lista normalna: 
 - czerwony, 

@@ -1,7 +1,7 @@
 @import './light_colors';
 
 .nuxt-content  {
-    padding: 20px;
+    padding: 10px;
     background-color: $background-content-color;
 
     code {            
@@ -165,5 +165,39 @@
         li:before {        
             content: counter(inst);
         }
+    }
+
+    blockquote {
+        font-family: 'Fira Code', monospace;
+        background-color: $grey-light;
+
+        * {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        &::before {
+            display: flex;
+            padding-left: 10px;
+            margin-bottom: 24px;
+            content: ",,";
+            font-size: 32px;
+            line-height: 1em;
+            
+        }
+        &::after {
+            display: flex;
+            padding-right: 10px;
+            content: ",,";
+            justify-content: end;
+            font-size: 32px;
+            padding-bottom: 12px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .nuxt-content  {
+        padding: 20px;
     }
 }

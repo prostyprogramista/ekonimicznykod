@@ -18,7 +18,6 @@ export default {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/techno-agony' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/bai-jamjuree-2' },
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/ubuntu-condensed-2' },
@@ -42,6 +41,8 @@ export default {
     '@/assets/scss/header.scss',
     '@/assets/scss/main.scss', 
     '@/assets/scss/pages/index.scss',
+    '@/assets/scss/pages/about/me.scss',
+    '@/assets/scss/pages/about/blog.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

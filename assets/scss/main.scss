@@ -22,8 +22,9 @@ html {
 }
 
 main {
-	margin: 20px;
-	
+	margin: 10px;
+
+
     h1 {
         font-family: 'Ubuntu Condensed', sans-serif;
         font-size: 2.25rem;
@@ -43,6 +44,87 @@ main {
 	}
 }
 
+
+.accept-icon-background {
+	height: 50px;
+	width: 50px;
+	background-color: greenyellow;
+	border-radius: 100%;
+
+	.accept-icon-shadow {
+		filter: drop-shadow(2px 2px 3px rgb(35, 53, 40));
+
+		.accept-icon {
+			height: 50px;
+			width: 50px;
+			mask-image: url('~/assets/icons/accept.svg');
+			mask-size: contain;
+			background-color: green;
+
+		}
+	}
+}
+
+.info-icon-background {
+	height: 50px;
+	width: 50px;
+	background-color: greenyellow;
+	border-radius: 100%;
+
+	.info-icon-shadow {
+		filter: drop-shadow(2px 2px 3px rgb(35, 53, 40));
+
+		.info-icon {
+			height: 50px;
+			width: 50px;
+			mask-image: url('~/assets/icons/info.svg');
+			mask-size: contain;
+			background-color: green;
+
+		}
+	}
+}
+
+.warning-icon-background {
+	height: 50px;
+	width: 50px;
+	background-color: greenyellow;
+	border-radius: 100%;
+
+	.warning-icon-shadow {
+		filter: drop-shadow(2px 2px 3px rgb(35, 53, 40));
+
+		.warning-icon {
+			height: 50px;
+			width: 50px;
+			mask-image: url('~/assets/icons/warning2.svg');
+			mask-size: contain;
+			background-color: green;
+
+		}
+	}
+}
+
+.error-icon-background {
+	height: 50px;
+	width: 50px;
+	background-color: greenyellow;
+	border-radius: 100%;
+
+	.error-icon-shadow {
+		filter: drop-shadow(2px 2px 3px rgb(35, 53, 40));
+
+		.error-icon {
+			height: 50px;
+			width: 50px;
+			mask-image: url('~/assets/icons/error.svg');
+			mask-size: contain;
+			background-color: green;
+
+		}
+	}
+}
+
 @media (min-width: 320px) {
 
 }
@@ -50,7 +132,9 @@ main {
 
 }
 @media (min-width: 768px) {
-
+	main {
+		margin: 40px;
+	}
 }
 @media (min-width: 800px) {
 
@@ -58,6 +142,9 @@ main {
 @media (min-width: 1024px) {
 	main {
 		display: grid;
+		
+		margin-left: 0px;
+		margin-right: 0px;
 		
 		grid-template-columns: repeat(12, 1fr);
 	}

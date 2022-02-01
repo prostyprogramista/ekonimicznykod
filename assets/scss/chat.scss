@@ -4,7 +4,8 @@
     grid-column: 2 / -2;
     grid-row: 3;
 
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
     border-top: 1px solid $separator-line-color;
     border-bottom: 1px solid $separator-line-color;
@@ -12,13 +13,12 @@
 
 @media (min-width: 768px) {
     .chat {
-        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 1024px) {
     .chat {
-        margin-left: 0px;
-        margin-right: 0px;
     }
 }
