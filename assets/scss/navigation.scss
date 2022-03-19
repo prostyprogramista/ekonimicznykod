@@ -1,7 +1,8 @@
 @import './light_colors';
+@import './global_variables';
 
 nav {
-    height: 80px;
+    height: $navigation-height;
 
     .navigation {
         display: flex;
@@ -13,7 +14,7 @@ nav {
         box-shadow: 0px 5px 3px -5px $shadow-color;
     
         width: 100%;
-        height: 80px;
+        height: $navigation-height;
 
         z-index: 100;
     
@@ -30,8 +31,8 @@ nav {
             }
     
             .logo-icon {
-                height: 55px;
-                width: 55px;
+                height: $logo-size;
+                width: $logo-size;
                 mask-image: url('~/assets/icons/logo-ek.svg');
                 mask-size: contain;
                 background-color: $text-color;
@@ -47,9 +48,9 @@ nav {
             align-items: center;
             list-style: none;
 
-            top: 80px;
+            top: $navigation-height;
             width: 100%;
-            height: calc(100vh - 80px);
+            height: calc(100vh - $navigation-height);
 
             font-family: 'Roboto', sans-serif;
             letter-spacing: 2px;

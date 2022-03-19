@@ -31,6 +31,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/scss/_animations.scss',
+    '@/assets/scss/_global_variables.scss',
     '@/assets/scss/_light_colors.scss',
     '@/assets/scss/_dark_colors.scss',
     '@/assets/scss/markdown.scss',
@@ -40,6 +41,7 @@ export default {
     '@/assets/scss/chat.scss',
     '@/assets/scss/header.scss',
     '@/assets/scss/main.scss', 
+    '@/assets/scss/panel.scss', 
     '@/assets/scss/pages/index.scss',
     '@/assets/scss/pages/about/me.scss',
     '@/assets/scss/pages/about/blog.scss',

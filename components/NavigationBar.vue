@@ -19,7 +19,7 @@
 
       <div class="links" v-bind:class="{ 'display': isActive }">
         <NuxtLink to="/ostatnie">Najnowsze</NuxtLink>
-        <NuxtLink to="/spis-tresci">Spis treści</NuxtLink>
+        <NuxtLink to="/jakis-tam-routing">Spis treści</NuxtLink>
         <NuxtLink to="/biblioteczka">Literatura</NuxtLink>
         <NuxtLink to="/">Inne</NuxtLink>
         <NuxtLink to="/kontakt">Kontakt</NuxtLink>

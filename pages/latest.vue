@@ -1,10 +1,12 @@
 <template>
-  <div>
+  <main>
+    <div>
       <h2>Latest posts</h2>
         <div v-for="article of articles" :key="article">
             {{article.title}}
         </div>
-  </div>
+        </div>
+  </main>
 </template>
 
 <script>

@@ -29,7 +29,7 @@ $code-block-text-color: $deep-orange;
 // $selection-background-color: $dark-blue;
 // $selection-text-color: $text-color-contrast;
 
-$selection-background-color: #afff79;
+$selection-background-color: #d7ff79;
 $selection-text-color: $text-color;
 
 $hiperlink-color: $orange-hightlight;
@@ -47,3 +47,28 @@ $hiperlink-hover-selection-color: $orange-hightlight;
 $footer-background-color: #000913;
 
 $separator-line-color: $grey-hightlight;
+
+$panel-accept-background-color: #E8F5E9;
+$panel-info-background-color: #D4EDF8;
+$panel-warning-background-color: #FFFDE7;
+$panel-error-background-color: #FBE9E7;
+
+$panel-accept-border-color: #A5D6A7;
+$panel-info-border-color: #81D4FA;
+$panel-warning-border-color: #FFD54F;
+$panel-error-border-color: #FF9E80;
+
+$panel-accept-icon-background-color: #A5D6A7;
+$panel-info-icon-background-color: #81D4FA;
+$panel-warning-icon-background-color: #F4FF81;
+$panel-error-icon-background-color: #FF9E80;
+
+$panel-accept-icon-color: #00C853;
+$panel-info-icon-color: #0288D1;
+$panel-warning-icon-color: #FBC02D;
+$panel-error-icon-color: #F4511E;
+
+$panel-accept-shadow-color: #1B5E20;
+$panel-info-shadow-color: #01579B;
+$panel-warning-shadow-color: #FF6F00;
+$panel-error-shadow-color: #BF360C;

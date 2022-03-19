@@ -178,20 +178,14 @@
 
         &::before {
             display: flex;
-            padding-left: 10px;
-            margin-bottom: 24px;
-            content: ",,";
-            font-size: 32px;
-            line-height: 1em;
-            
+            height: 40px;
+            content: url('~/assets/icons/apostrophe.svg');            
         }
         &::after {
             display: flex;
-            padding-right: 10px;
-            content: ",,";
+            height: 40px;
+            content: url('~/assets/icons/apostrophe.svg');
             justify-content: end;
-            font-size: 32px;
-            padding-bottom: 12px;
         }
     }
 }

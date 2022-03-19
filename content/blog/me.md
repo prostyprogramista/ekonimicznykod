@@ -33,7 +33,7 @@ Pójdźże, kiń tę chmurność w głąb flaszy!
 
 > To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu.
 >
-> To jest drugi akapit w bloku cytatu.
+> To jest drugi akapit w bloku cytatu. To jest drugi akapit w bloku cytatu. To jest drugi akapit w bloku cytatu. To jest drugi akapit w bloku cytatu. To jest drugi akapit w bloku cytatu. To jest drugi akapit w bloku cytatu. To jest drugi akapit w bloku cytatu. To jest drugi akapit w bloku cytatu.
 
 
 To jest [przykładowy link](http://przykład.pl/ "Z Tytułem"). 
@@ -65,7 +65,6 @@ to jest mój koD `@Slf4j -> cos => function() = console.log()`:   afsd sda
 
 abc
 
-<Test>
 
 ```java 
 @Override
@@ -109,6 +108,8 @@ fun cos() => {
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
+<PanelAccept> tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużotekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te
+</PanelAccept>
 
 :tada: :100:
 

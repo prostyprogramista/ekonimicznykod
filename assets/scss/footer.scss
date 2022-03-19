@@ -1,4 +1,5 @@
 @import './light_colors';
+@import './global_variables';
 
 footer {    
     display: grid;
@@ -20,8 +21,8 @@ footer {
         grid-row: 1;
 
         margin: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: $small-margin;
+        margin-right: $small-margin;
         
 	    color: $text-color-contrast;
 	}
@@ -41,8 +42,8 @@ footer {
             display: flex;
             align-items: center;
             
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: $small-margin;
+            margin-right: $small-margin;
 
 	        color: $text-color-contrast-light;
         }
@@ -54,14 +55,14 @@ footer {
         div.content {
             margin-top: 10px;
             margin-bottom: 10px;
-            margin-left: 40px;
-            margin-right: 40px;
+            margin-left: $big-margin;
+            margin-right: $big-margin;
         }
 
         div.name {
             p {
-                margin-left: 40px;
-                margin-right: 40px;
+                margin-left: $big-margin;
+                margin-right: $big-margin;
             }
         }
         
