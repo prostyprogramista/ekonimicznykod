@@ -21,10 +21,10 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/bai-jamjuree-2' },
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/ubuntu-condensed-2' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/ekonomicznykod/images/favicon/apple-touch-icon.png' },
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/ekonomicznykod/images/favicon/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/ekonomicznykod/images/favicon/favicon-16x16.png' },
-      { rel: 'manifest', href: '/ekonomicznykod/images/favicon/site.webmanifest' }
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/ekonomicznykod/icons/favicon/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/ekonomicznykod/icons/favicon/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/ekonomicznykod/icons/favicon/favicon-16x16.png' },
+      { rel: 'manifest', href: '/ekonomicznykod/icons/favicon/site.webmanifest' }
     ]
   },
 

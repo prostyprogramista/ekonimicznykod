@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="base-container">
         <NavigationBar />
         <Nuxt/>
         <Footer/>

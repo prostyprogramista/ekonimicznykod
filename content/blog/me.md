@@ -1,16 +1,14 @@
 ---
-title: My custom page
+title: My custÓóŻżŹźŁłom page
 description: |
-    to jest opis z nową linią tutaj 
-    tutaj
-    i tutaj
-img: jakas/tam/path
+    tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużotekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo 
+img: images/header/header-big-2.jpg
 slug: /jakis-tam-routing-2
 route: 
     path: /jakis-tam-routing
 ---
 
-# Nagłówek pierwszego Nagłówek pierwszego Nagłówek pierwszego poziomu la la alalalal lalal alalal al la al ala la la alallalala lalla tak `@Override`
+## Nagłówek pierwszego Nagłówek pierwszego Nagłówek pierwszego poziomu la la alalalal lalal alalal al la al ala la la alallalala lalla tak `@Override`
 
 jakiś tekst sobie tutaj jest dfs dsfgds  
 gdfsgfhdgfh  
@@ -21,7 +19,7 @@ jgfjgfutyjhg
 
 To jest [przykładowy link](http://przykład.pl/ "Z Tytułem"). 
 
-## Nagłówek drugiego poziomu Nagłówek drugiego poziom  Nagłówek drugiego poziom  Nagłówek drugiego poziom  Nagłówek drugiego poziom  `@Override`
+### Nagłówek drugiego poziomu Nagłówek drugiego poziom  Nagłówek drugiego poziom  Nagłówek drugiego poziom  Nagłówek drugiego poziom  `@Override`
 
 Now is the time for all good men to come to
 the aid of their country. This is just a
@@ -29,7 +27,10 @@ regular paragraph.
 
 Pójdźże, kiń tę chmurność w głąb flaszy!
 
-### Nagłówek trzeciego poziomu Nagłówek drugiego poziom  Nagłówek drugiego poziom  Nagłówek drugiego poziom  `@Override`
+### Nagłówek trzeciego poziomu Nagłówek drugiego poziom  Nagłówek drugiego poziom  Nagłówek drugiego poziom  `@Override`  
+
+dasda
+#### Nagłówek trzeciego poziomu Nagłówek drugiego poziom  Nagłówek drugiego poziom  Nagłówek drugiego poziom  `@Override`
 
 > To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu. To jest blok cytatu.
 >
@@ -108,8 +109,59 @@ fun cos() => {
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-<PanelAccept> tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużotekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te
+<PanelAccept>tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużotekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam ***dużo tekstumam dużo tekstudzie mam*** dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo 
+
+tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie `mam dużo tekstu, ie mam` dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te  
+  
+  
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned asjdakfdas fsd dkfg | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużote  
+
 </PanelAccept>
+
+<PanelError>tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużotekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam ***dużo tekstumam dużo tekstudzie mam*** dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo 
+
+tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie `mam dużo tekstu, ie mam` dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te  
+  
+  
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned asjdakfdas fsd dkfg | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużote  
+
+</PanelError>
+
+<PanelInfo>tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużotekstudzie mam dużo tekstu, ie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam ***dużo tekstumam dużo tekstudzie mam*** dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo 
+
+tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te tekstudzie mam dużo tekstumam dużo tekstudzie `mam dużo tekstu, ie mam` dużo tekstumam dużotekstudzie mam dużo tekstumam dużo te  
+  
+  
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned asjdakfdas fsd dkfg | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+tekstudzie mam dużo tekstumam dużo tekstudzie mam dużo tekstu, ie mam dużo tekstumam dużotekstudzie mam dużo tekstumam dużote  
+
+</PanelInfo>
+
+<PanelWarning>tekstumam dużo tekstudzie mam dużo tekstumam 
+</PanelWarning>
 
 :tada: :100:
 

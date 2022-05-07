@@ -3,7 +3,7 @@
       <section class="about-me-page">
           <h1>O mnie</h1>
           <p>
-            Hej, nazywam się Andrzej Kwiatkowski, jestem prostym programistą, fanem squasha, łasuchem lubiącym dobrze zjeść i osobą starającą się zrozumieć prawa rządzące dzisiejszym 
+            Hej, nazywam się Andrzej Kwiatkowski, jestem prostym programistą, fanem squasha, łasuchem lubiącym dobrze pojeść i osobą starającą się zrozumieć prawa rządzące dzisiejszym 
             światem. Jestem dość spokojną i zrównoważoną osobą, która nie lubi bezsensownie tracić energii na niepotrzebne konflikty. Lubię myśleć o swojej pracy jako o hobby. 
             Programowanie to coś, co mnie pociąga i ciekawi. Cały czas staram się poszerzać swoją wiedzę i umiejętności. Szukam optymalizacji i automatyzacji codziennych zadań. 
             Technologia i umiejętności programistyczne zdecydowanie mi w tym pomagają. Jednocześnie lubię prostotę i przejrzystość, dlatego też stronię od nadmiernego komplikowania problemów.

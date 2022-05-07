@@ -2,90 +2,62 @@
 @import './global_variables';
 @import './animations';
 
-.main-page-header {
-    .hero-img {
+main {
+    header {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    
         position: relative;
-        height: calc(100vh - $navigation-height);
-        background-image: url('/ekonomicznykod/images/header/header-small.jpg');
-        background-position: 0 0;
-        background-size: cover;
-        background-attachment: fixed;
-        z-index: -2;
-    }
-
-    .hero-shadow {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: -10;
-    }
-
-    .hero-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        height: 100%;
-        padding: 10px;
-        z-index: 5;
-        font-family: 'Bai Jamjuree', sans-serif;
-
-        h1 {
-            text-transform: uppercase;
-            font-family: 'Techno Agony', sans-serif;
-            color: $text-color-contrast;
-            font-size: 3rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-            color: $text-color-contrast;
-        }
-
-        .header-arrow {
+        height: calc(70vh - $navigation-height);
+        clip-path: inset(0);
+    
+        .hero-text {
+            color: white;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Bai Jamjuree', sans-serif;
+            
+            h1 {
+                font-family: 'Ubuntu Condensed', sans-serif;
+                text-transform: uppercase;
+                color: $text-color-contrast;
+                font-size: 3rem;
+            }
+    
+            pre {
+                margin: $big-margin;
+                margin-top: 0;
+                margin-bottom: 0;
+    
+                font-size: 1.5rem;
+                color: $text-color-contrast;
+                white-space: pre-wrap;
+            }
+            
+        img.header-arrow {
             margin-top: 20px;
             opacity: 0.5;
             animation: scrollDown 2s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-    }
-
-}
-
-
-@media (min-width: 768px) {
-    .main-page-header {
-        .hero-text {
-            padding: 20px;
-
-            h1 {
-                margin-top: 6%;
-                
-	            font-size: 4.4rem;
-            }
-
-            p {
-                margin-top: 2%;
-                
-	            font-size: 2.2rem;
-            }
+    
+            z-index: 10;
         }
-    }
-}
-
-@media (min-width: 1024px) {
-	.main-page-header {
-		grid-column: 1 / -1;
         
-        .hero-text {
-            h1 {
-                font-size: 5.5rem;
-            }
-
-            p {
-                font-size: 2.5rem;
-            }
+    
+        img.background {
+            object-fit: cover;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            filter: brightness(50%);
         }
-	}
+    }
 }

@@ -6,22 +6,22 @@
         <div class="hero-text">
           <h1>Ekonomiczny kod</h1>
           <p>Witaj na blogu - w miejscu, gdzie programujemy z pasją</p>
-          <img class="header-arrow" src="~/assets/icons/chevrons-down.svg" />
+          <img class="header-arrow" src="~/static/icons/chevrons-down.svg" />
         </div>
       </div>
     </header>
 
-    <main>
+    <main class="index">
       <section class="index-page">
         <h1>Co znajdziesz na blogu?</h1>
         <p>
-          <b>Główym założeniem bloga jest dzielenie się zdobytą wiedzą. </b>
+          <b>Wiodącą ideą bloga jest dzielenie się zdobywaną wiedzą. </b>
         </p>
         <p>
           Na blogu publikowane są głównie posty związane z szerokopojętym programowaniem. Back-end, front-end, bazy danych, architektura, wzorce projektowe? Jasne! 
           Wszystkie te tematy są tu poruszane! Ocziwiście blog nie jest zamknięty wyłacznie w ramach technicznych.
           Poruszane są tutaj również tematy miękkie takie jak relacje, skuteczna komunikacja, samorozwój a także inne około programistyczne zagadnienia. 
-          Sporadycznie na blogu mogą również się pojawiać tematy odbiegające od programowania - związane głównie z moimi zainteresowaniami :)
+          Sporadycznie na blogu mogą również pojawiać się tematy odbiegające od programowania - związane głównie z moimi zainteresowaniami :)
         </p>
         <p>
           <b>Blog podzielony jest na kilka sekcji: </b>

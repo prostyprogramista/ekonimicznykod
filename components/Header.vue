@@ -1,12 +1,12 @@
 <template>
-  <header class="test">
-  
-    <div>
-      {{title}} </br>
-      {{description}}  </br>
-      {{imageSrc}} </br>
+  <header>
+    <div class="hero-text">
+      <h1>{{title}}</h1>
+      <pre>{{description}}</pre>
+      <img class="header-arrow" src="/icons/chevrons-down.svg" />
     </div>
-    <img :src="imageSrc" />
+    <img class="background" v-if="imageSrc" :src="imageSrc" />
+    <img class="background" v-else src="/images/header/empty.jpg" />
   </header>
 </template>
 

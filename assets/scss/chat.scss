@@ -1,15 +1,15 @@
 @import './light_colors';
 
-.chat {
-    grid-column: 2 / -2;
-    grid-row: 3;
+    .chat {
+        grid-column: 2 / -2;
+        grid-row: 3;
+        
+        margin-top: 5px;
+        margin-bottom: 5px;
 
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-    border-top: 1px solid $separator-line-color;
-    border-bottom: 1px solid $separator-line-color;
-}
+        border-top: 1px solid $separator-line-color;
+        border-bottom: 1px solid $separator-line-color;
+    }
 
 @media (min-width: 768px) {
     .chat {

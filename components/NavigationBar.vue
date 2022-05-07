@@ -6,18 +6,18 @@
           <img src="/ekonomicznykod/images/logo/logo.png" alt="logo" />
         </NuxtLink>
       </div> -->
-      
+
       <div class="logo">
         <div class="logo-icon-background">
-          <div class="logo-icon-shadow"> 
+          <div class="logo-icon-shadow">
             <NuxtLink to="/">
-              <img class="logo-icon"/>  
+              <img class="logo-icon" />
             </NuxtLink>
           </div>
         </div>
       </div>
 
-      <div class="links" v-bind:class="{ 'display': isActive }">
+      <div class="links" v-bind:class="{ display: isActive }">
         <NuxtLink to="/ostatnie">Najnowsze</NuxtLink>
         <NuxtLink to="/jakis-tam-routing">Spis treści</NuxtLink>
         <NuxtLink to="/biblioteczka">Literatura</NuxtLink>

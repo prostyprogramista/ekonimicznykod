@@ -1,8 +1,9 @@
 @import './light_colors';
 @import './global_variables';
 
-footer {    
+footer {
     display: grid;
+    grid-row: 3;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 2em;
 

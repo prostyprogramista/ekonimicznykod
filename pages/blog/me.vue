@@ -1,5 +1,10 @@
 <template>
   <main>
+    <Header
+      :title="article.title"
+      :description="article.description"
+      :imageSrc="article.img"
+    />
     <article>
       <nuxt-content :document="article" />
     </article>

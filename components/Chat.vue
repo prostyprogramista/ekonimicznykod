@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  props: [ 'id', 'title' ],
+  props: ["id", "title"],
   created() {
     const props = { id: this.id, title: this.title };
 
@@ -18,6 +18,6 @@ export default {
     s.src = "https://ekonomicznykod.disqus.com/embed.js";
     s.setAttribute("data-timestamp", +new Date());
     (doc.head || doc.body).appendChild(s);
-  }
+  },
 };
 </script>

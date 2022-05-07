@@ -44,7 +44,7 @@
             border-bottom: 1px solid $panel-error-border-color;
         }
 
-        filter: drop-shadow(2px 2px 3px rgb(35, 53, 40, 0.15));
+        filter: drop-shadow(1.5px 1.5px 3px rgba(148, 148, 148, 0.5));
         
         .accept-icon-background {
             height: 50px;
@@ -130,7 +130,8 @@
     .content {
         grid-row: 2;
 
-        margin: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
         display: flex;
 
         align-items: center;
@@ -168,7 +169,8 @@
             grid-column: 2;
             grid-row: 1;
     
-            margin: 1.15em;
+            margin: 0.8em;
+            margin-top: 0.8em;
             margin-left: 0px;
         }
     }
