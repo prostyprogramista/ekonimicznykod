@@ -8,7 +8,7 @@
     <article>
       <nuxt-content :document="article" />
     </article>
-    <Chat title="My custom page" id="/jakis-tam-routing" />
+    <Chat title="My custÓóŻżŹźŁłom page" id="/jakis-tam-routing" />
   </main>
 </template>
 
