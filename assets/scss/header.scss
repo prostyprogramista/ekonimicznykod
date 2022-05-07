@@ -8,7 +8,7 @@ main {
         grid-row: 1;
     
         position: relative;
-        height: calc(70vh - $navigation-height);
+        height: calc(100vh - $navigation-height);
         clip-path: inset(0);
     
         .hero-text {

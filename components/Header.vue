@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="hero-text">
-      <h1>{{title}}</h1>
+      <h1 id="dsadasda">{{title}}</h1>
       <pre>{{description}}</pre>
       <img class="header-arrow" src="~/static/icons/chevrons-down.svg" />
     </div>
