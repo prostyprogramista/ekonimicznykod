@@ -3,10 +3,10 @@
     <div class="hero-text">
       <h1>{{title}}</h1>
       <pre>{{description}}</pre>
-      <img class="header-arrow" src="/icons/chevrons-down.svg" />
+      <img class="header-arrow" src="~/static/icons/chevrons-down.svg" />
     </div>
     <img class="background" v-if="imageSrc" :src="imageSrc" />
-    <img class="background" v-else src="/images/header/empty.jpg" />
+    <img class="background" v-else src="~/static/images/header/empty.jpg" />
   </header>
 </template>
 
