@@ -285,6 +285,7 @@ private myMethod(): Integer {
     }
 }
 ```
+dupa
 ```typescript
 fun cos() => {
     jakas()

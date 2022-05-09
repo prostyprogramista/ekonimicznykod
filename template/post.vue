@@ -13,6 +13,7 @@
 </template>
 
 <script>
+console.log("dupa")
 export default {
   async asyncData({ $content }) {
     const article = await $content(contentLocalization).fetch();

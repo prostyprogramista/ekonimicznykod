@@ -17,6 +17,10 @@
     line-height: 1.5em;
 }
 
+.hide {
+	display: none;
+}
+
 html {
 	scroll-behavior: smooth;
 	background-color: $background-color;
