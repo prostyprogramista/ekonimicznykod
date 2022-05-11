@@ -262,9 +262,8 @@ abc
 private void myMethod() {
     cos != 0
 
-    const cos = function () => {
-        return "cos";
-    }
+    const toJestJakasMojaFunksja = function () => return "cos";
+    
     if(cos.isEmpty()) {
         () -> {
             
@@ -288,7 +287,8 @@ private myMethod(): Integer {
     }
 }
 ```
-dupa
+
+
 ```typescript
 fun cos() => {
     jakas()

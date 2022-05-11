@@ -24,17 +24,17 @@ export default {
       "nuxt-content-highlight"
     );
     let codeElementAmount = codeElements.length;
-    // let emptySpan = document.createTextNode("\n")
-
-    // codeElements[1].firstChild.firstChild.appendChild(emptySpan)
-    // debugger;
     let codeBlocks = [[]];
 
     for (let i = 0, numberOfCodeBlock = 0; i < codeElementAmount; i++) {
       const element = codeElements[i];
       let nextElement = element.nextElementSibling;
 
-      codeBlocks[numberOfCodeBlock].push(element);
+      codeBlocks[numberOfCodeBlock].push({
+        element: element,
+        elementButton: document.createElement("button"),
+        elementHeight: element.clientHeight,
+      });
 
       if (
         i + 1 < codeElementAmount &&
@@ -48,53 +48,58 @@ export default {
 
     codeBlocks.forEach((codeBlock) => {
       let codeWrapper = document.createElement("div");
-      let codeContent = document.createElement("div");
-      let codeButton = document.createElement("div");
+      let codeContentSection = document.createElement("div");
+      let codeButtonSection = document.createElement("div");
 
       codeWrapper.classList.add("code-block");
-      codeButton.classList.add("code-button");
-      codeContent.classList.add("code-content");
-      codeContent.style.height = '600px';
+      codeButtonSection.classList.add("code-button-section");
+      codeContentSection.classList.add("code-content");
 
       for (let i = 0; i < codeBlock.length; i++) {
-        const element = codeBlock[i];
+        const { element, elementButton, elementHeight } = codeBlock[i];
         const parent = element.parentNode;
-        const newButton = document.createElement("button");
 
-        newButton.innerHTML = element.firstChild.classList.value
+        elementButton.classList.add("code-button");
+        elementButton.innerHTML = element.firstChild.classList.value
           .substring(
             element.firstChild.classList.value.indexOf("language-") + 9
           )
           .toUpperCase();
-        newButton.onclick = () => {
-          element.classList.add("hide");
-          
-          setTimeout(() => {
-            
-      codeContent.style.height = '300px';
-      // codeContent.classList.add("small");
-          }, 1000);
-          setTimeout(() => {
-            
-            element.classList.add("hide2");
-      codeContent.style.height = '300px';
-      // codeContent.classList.add("small");
-      
-            element.classList.add("hide2");
-          }, 1000);
+        elementButton.onclick = () => {
+          if (!element.classList.contains("show-code")) {
+            codeContentSection.style.height = elementHeight + "px";
+
+            codeBlock.forEach((it) => {
+              if (it.element.classList.contains("show-code")) {
+                it.element.classList.toggle("hide-code");
+                it.element.classList.toggle("show-code");
+                it.elementButton.classList.toggle("active-code-button");
+              }
+            });
+
+            element.classList.toggle("hide-code");
+            element.classList.toggle("show-code");
+            elementButton.classList.toggle("active-code-button");
+          }
         };
 
         if (i == 0) {
           parent.replaceChild(codeWrapper, element);
 
-          codeWrapper.appendChild(codeButton);
-          codeWrapper.appendChild(codeContent);
+          codeContentSection.style.height = elementHeight + "px";
+          codeWrapper.appendChild(codeButtonSection);
+          codeWrapper.appendChild(codeContentSection);
+
+          elementButton.classList.add("active-code-button");
+          element.classList.add("show-code");
         } else {
           parent.removeChild(element);
+
+          element.classList.add("hide-code");
         }
 
-        codeButton.appendChild(newButton);
-        codeContent.appendChild(element);
+        codeButtonSection.appendChild(elementButton);
+        codeContentSection.appendChild(element);
       }
     });
   },
