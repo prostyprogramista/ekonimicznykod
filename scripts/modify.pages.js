@@ -51,24 +51,6 @@ export function buildMultipleCodeBlock() {
 
         for (let i = 0; i < codeBlock.length; i++) {
             const { element, elementButton, elementHeight } = codeBlock[i];
-            // const elementButton = createLanguageButton(element, (() => {
-            //     if (!element.classList.contains('show-code')) {
-            //         changeContentHeight(codeContentSection, elementHeight)
-
-            //         codeBlock.forEach((it) => {
-            //             if (it.element.classList.contains('show-code')) {
-            //                 it.element.classList.toggle('hide-code');
-            //                 it.element.classList.toggle('show-code');
-            //                 elementButton.classList.remove('active-code-button');
-            //             }
-            //         });
-
-            //         element.classList.toggle('hide-code');
-            //         element.classList.toggle('show-code');
-            //         elementButton.classList.toggle('active-code-button');
-            //     }
-            // }))
-
             const parent = element.parentNode;
 
             elementButton.classList.add('code-button');
@@ -127,33 +109,3 @@ export function buildMultipleCodeBlock() {
         }
     });
 }
-
-// function changeContentHeight(contentSection, height) {
-//     contentSection.style.height = height;
-// }
-
-// function createLanguageButton(element, onClick) {
-//     const elementButton = document.createElement('button')
-
-//     elementButton.classList.add('code-button');
-
-//     let language = '';
-//     const languageCodeBlockClasses = element.firstChild.classList;
-
-//     for (let i = 0; i < languageCodeBlockClasses.length; i++) {
-//         const languageNameSearch = 'language-';
-//         const languageNameLenght = languageNameSearch.length;
-//         const languageCodeBlockClass = languageCodeBlockClasses[i];
-//         const isLanguageClass = languageCodeBlockClass.includes(languageNameSearch);
-
-
-//         if (isLanguageClass) {
-//             language = languageCodeBlockClass.substring(languageNameLenght);
-//         }
-//     }
-
-//     elementButton.innerHTML = language.toUpperCase();
-//     elementButton.onclick = onClick
-
-//     return elementButton
-// }
