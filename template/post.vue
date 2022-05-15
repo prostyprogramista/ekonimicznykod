@@ -8,17 +8,22 @@
     <article>
       <nuxt-content :document="article" />
     </article>
-    <Chat title="postTitle" id="postRoute" />
+    <!-- <Chat title="postTitle" id="postRoute" /> -->
   </main>
 </template>
 
 <script>
-console.log("dupa")
+import { wrapLiElements, buildMultipleCodeBlock } from '@/scripts/modify.pages.js';
+
 export default {
   async asyncData({ $content }) {
     const article = await $content(contentLocalization).fetch();
 
     return { article };
+  },
+  mounted() {
+    wrapLiElements()
+    buildMultipleCodeBlock()
   },
 };
 </script>

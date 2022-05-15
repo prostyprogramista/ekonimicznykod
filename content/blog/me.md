@@ -260,7 +260,7 @@ abc
 ```java 
 @Override
 private void myMethod() {
-    cos != 0
+    LocalDateTime cos != 0;
 
     const toJestJakasMojaFunksja = function () => return "cos";
     
@@ -270,13 +270,18 @@ private void myMethod() {
         };
         return 1;
     } else {
-        return 3;
+        return 3.3f;
     }
 
 
     
 }
 ``` 
+ddasda
+dsada
+
+dsada
+
 ```kotlin
 @Override
 private myMethod(): Integer {
@@ -287,10 +292,10 @@ private myMethod(): Integer {
     }
 }
 ```
-
+ sdfds
 
 ```typescript
-fun cos() => {
+function cos() => {
     jakas()
 }
 ```
