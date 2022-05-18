@@ -2,19 +2,10 @@
 @import url('https://css.gg/arrow-bottom-right-r.css');
 
 .nuxt-content {
+    margin-top: 10px;
     padding: 10px;
 
-    box-shadow: 0px -12px 24px -20px rgba(66, 68, 90, 1);
-
-    code {
-        margin-left: 2px;
-        margin-right: 2px;
-
-        font-family: 'Fira Code', monospace;
-
-        color: $code-block-text-color;
-
-    }
+    box-shadow: 5px 0px 5px -7px $shadow-color, -5px 0px 5px -7px $shadow-color;
 
     *::selection {
         background-color: $selection-background-color;
@@ -68,6 +59,7 @@
         }
     }
 
+    // paragraph
     p {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -115,61 +107,7 @@
         }
     }
 
-    div {
-        pre {
-
-            background-color: $code-block-background-color;
-            border: 1px solid $code-block-border-color;
-            border-radius: 12px 12px 12px 12px;
-
-            code {
-                color: $text-color;
-
-                * {
-                    font-family: 'Fira Code', monospace;
-                }
-
-                .token.punctuation {
-                    color: $text-color;
-                }
-
-                .token.class-name {
-                    color: $text-color;
-                }
-
-                .token.function {
-                    color: $text-color;
-                }
-
-                .token.number {
-                    color: $code-block-number-color;
-                }
-
-                .token.string {
-                    color: $code-block-string-color;
-                    font-weight: bold;
-                }
-
-                .token.operator {
-                    color: $text-color;
-                }
-
-                .token.keyword {
-                    color: $code-block-keyword-color;
-                    font-weight: bold;
-                }
-
-                span.token.operator {
-                    background-color: $code-block-background-color;
-                }
-
-                .token.annotation {
-                    color: $orange-hightlight;
-                }
-            }
-        }
-    }
-
+    // list
     li {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -201,6 +139,7 @@
 
     }
 
+    // list
     ul {
         li:before {
             content: "";
@@ -209,12 +148,14 @@
         }
     }
 
+    // numerated list
     ol {
         li:before {
             content: counter(inst);
         }
     }
 
+    // quote
     blockquote {
         font-family: 'Fira Code', monospace;
         background-color: $grey-light;
@@ -238,10 +179,23 @@
         }
     }
 
-    .code-block {
+    // code text
+    code {
+        margin-left: 2px;
+        margin-right: 2px;
+
+        font-family: 'Fira Code', monospace;
+
+        color: $code-block-text-color;
+    }
+
+    // code-block
+    div.code-block {
+        margin-bottom: 10px;
+        
         position: relative;
 
-        .code-button-section {
+        div.code-button-section {
             position: relative;
             width: 100%;
 
@@ -319,7 +273,7 @@
             }
         }
 
-        .code-content {
+        div.code-content {
             position: relative;
             width: 100%;
             transition: all .8s;
@@ -340,18 +294,85 @@
 
                 z-index: 1;
             }
-        }
-    }
 
-    .nuxt-content-highlight {
-        position: absolute;
-        overflow: auto;
-        width: 100%;
+            div {
+                &.nuxt-content-highlight {
+                    position: absolute;
+                    overflow: visible;
+                    width: 100%;
+
+                    pre {
+                        background-color: $background-color;
+                        box-shadow: 0px 5px 5px -7px $shadow-color-light, 0px -5px 5px -7px $shadow-color-light;
+
+                        code {
+                            color: $text-color;
+
+                            * {
+                                font-family: 'Fira Code', monospace;
+                            }
+
+                            .token.punctuation {
+                                color: $text-color;
+                            }
+
+                            .token.class-name {
+                                color: $text-color;
+                            }
+
+                            .token.function {
+                                color: $text-color;
+                            }
+
+                            .token.number {
+                                color: $code-block-number-color;
+                            }
+
+                            .token.string {
+                                color: $code-block-string-color;
+                                font-weight: bold;
+                            }
+
+                            .token.operator {
+                                color: $text-color;
+                            }
+
+                            .token.keyword {
+                                color: $code-block-keyword-color;
+                                font-weight: bold;
+                            }
+
+                            span.token.operator {
+                                background-color: $code-block-background-color;
+                            }
+
+                            .token.annotation {
+                                color: $orange-hightlight;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media (min-width: 768px) {
     .nuxt-content {
         padding: 20px;
+
+        // code-block
+        div.code-block {
+            div.code-content {
+                div.nuxt-content-highlight {
+                        pre {
+                            background-color: $code-block-background-color;
+                            border: 1px solid $code-block-border-color;
+                            border-radius: 12px 12px 12px 12px;
+                            box-shadow: none;
+                        }
+                }
+            }
+        }
     }
 }

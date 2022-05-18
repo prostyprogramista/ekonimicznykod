@@ -248,7 +248,7 @@ Użyj trzech asterysków do ***mocnego wyróżnienia***.
 Lub, jeśli wolisz, ___użyj dwóch podkreślników___.
 
 obrazek:   
-![jakiś tekst](/ekonomicznykod/images/header/header-big-2.jpg "typuł")
+<!-- ![jakiś tekst](/ekonomicznykod/images/header/header-big-2.jpg "typuł") -->
 
 to jest mój koD `@Slf4j -> cos => function() = console.log()`:   afsd sda  
  fsdf safas fsa fsa
