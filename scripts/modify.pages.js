@@ -2,13 +2,10 @@ export function wrapLiElements() {
     let liElements = document.body.getElementsByTagName('li');
 
     for (let i = 0; i < liElements.length; i++) {
-        let newParagraph = document.createElement('p');
-        let liElement = liElements[i];
+        const newParagraph = document.createElement('p');
+        const liElement = liElements[i];
 
-        liElement.childNodes.forEach(node => {
-            newParagraph.appendChild(node);
-        })
-
+        newParagraph.append(...liElement.childNodes)
         liElement.replaceChildren(newParagraph);
     }
 }
