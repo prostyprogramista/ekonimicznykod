@@ -1,12 +1,6 @@
 <template>
   <nav>
     <div class="navigation">
-      <!-- <div class="logo">
-        <NuxtLink to="/">
-          <img src="/ekonomicznykod/images/logo/logo.png" alt="logo" />
-        </NuxtLink>
-      </div> -->
-
       <div class="logo">
         <div class="logo-icon-background">
           <div class="logo-icon-shadow">
@@ -18,11 +12,11 @@
       </div>
 
       <div class="links" v-bind:class="{ display: isActive }">
-        <NuxtLink to="/ostatnie">Najnowsze</NuxtLink>
-        <NuxtLink to="/jakis-tam-routing">Spis treści</NuxtLink>
-        <NuxtLink to="/biblioteczka">Literatura</NuxtLink>
-        <NuxtLink to="/">Inne</NuxtLink>
-        <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+        <NuxtLink v-on:click.native="handleNavigationBar" to="/ostatnie">Najnowsze</NuxtLink>
+        <NuxtLink v-on:click.native="handleNavigationBar" to="/jakis-tam-routing">Spis treści</NuxtLink>
+        <NuxtLink v-on:click.native="handleNavigationBar" to="/biblioteczka">Literatura</NuxtLink>
+        <NuxtLink v-on:click.native="handleNavigationBar" to="/">Inne</NuxtLink>
+        <NuxtLink v-on:click.native="handleNavigationBar" to="/kontakt">Kontakt</NuxtLink>
       </div>
 
       <div
