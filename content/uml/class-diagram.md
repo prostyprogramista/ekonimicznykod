@@ -43,7 +43,7 @@ class Animal {
 
 Gdy mówimy o klasach pewnie części z Was pomyśli sobie:  
 
-> No dobra ale co jeśli mamy klasę abstrakcyjną?
+>No dobra ale co jeśli mamy klasę abstrakcyjną?
 
 W takiej sytuacji UML oczywiście również ma swój standard. Klasy abstrakcyjne także prezentowane są poprzez prostokąty zawierające w sobie nazwę klasy, jednak w tym przypadku zapis nazwy musi być pisany kursywą (pochylenie nie jest zarezerwowane wyłącznie dla nazw klas, używane jest również przy atrybutach i metodach abstrakcyjnych – o czym w dalszej części artykułu). 
 
@@ -195,6 +195,7 @@ Metody umieszczane są w kolejnej sekcji. Żądzą się one podobnymi regułami 
 
 Ogólna deklaracja:  
 `modifier name`(`parametrName`: `parametrType`): `returnType` { `properties` }
+  <!-- **TODO** - Przykład do powyższego założenia  -->
 
 `modifier` – modyfikator dostępu  
 `name` – nazwa metody/funkcji  
@@ -253,11 +254,9 @@ Zależność to najsłabsza z wszystkich relacji w notacji UML. Reprezentuje rel
 
 Używa się tego wiązania gdy jeden element wymaga innego elementu lub zestawu elementów do jego pełnej implementacji lub działania. 
 
-<PanelAccept>Myśląc o `zależności`, z reguły można przyjąć, że będzie ona występować np. gdy będziemy w jakichś metodach zwracać dostawcę lub używać go jako parametr metody. 
-</PanelAccept> 
+>Accept: Myśląc o `zależności`, z reguły można przyjąć, że będzie ona występować np. gdy będziemy w jakichś metodach zwracać dostawcę lub używać go jako parametr metody.
 
-<PanelError>W przypadku gdy klasa od, której zależymy będzie umieszczona jako argument klasy, nie możemy już wtedy mówić o relacji między tymi obiektami w kontekście `zależności`. Używanie klasy dostawcy jako atrybut klasy naszego klienta sprawia, że relacja staje się silniejsza a co za tym idzie `zależność` już jej nie obejmuje.
-</PanelError>
+>Error: W przypadku gdy klasa od, której zależymy będzie umieszczona jako argument klasy, nie możemy już wtedy mówić o relacji między tymi obiektami w kontekście `zależności`. Używanie klasy dostawcy jako atrybut klasy naszego klienta sprawia, że relacja staje się silniejsza a co za tym idzie `zależność` już jej nie obejmuje.
 
 Zależność przedstawia się w postaci przerywanej strzałki między dwoma elementami modelu. Strzałkę prowadzi się od element modelu klienta do elementu modelu dostawcy, od którego klient jest zależny (grot strzałki skierowany jest w kierunku dostawcy). Strzałka może być oznaczona opcjonalnym słówkiem kluczowym lub stereotypem (objętym znacznikami `«`słówkoKluczoweLubStereotyp`»`) oraz opcjonalną nazwą.
 
@@ -332,8 +331,8 @@ class Person {
 
 Asocjacja jest silniejszym typem relacji niż zależność. Ten typ powiązania mówi nam, że obiekty objęte tą relacją są w pewien sposób od siebie zależne jednak istnienie jednego nie jest uwarunkowane od istnienia drugiego. Asocjacja reprezentuje sytuację, w której jeden obiekt jest jednym z atrybutów klasy drugiego.
 
-<PanelAccept>Asocjacja występuje wtedy gdy jednym z atrybutów naszego obiektu będzie referencja do jakiegoś obiektu – ten atrybut reprezentuje wiązanie asocjacyjne.
-</PanelAccept>
+>Accept: Asocjacja występuje wtedy gdy jednym z atrybutów naszego obiektu będzie referencja do jakiegoś obiektu – ten atrybut reprezentuje wiązanie asocjacyjne.
+
 
 Przykład: 
 ![Przykład asocjacji](/ekonomicznykod/images/uml/class-diagram/association-first-example.jpg "Przykład asocjacji")
@@ -471,11 +470,9 @@ Agregacja częściowa jest to swego rodzaju odmiana asocjacji. Jest mocniejszym 
 
 Oznacza się ją ciągłą linią (linią asocjacyjną) z pustym rąbem od strony klasy agregującej (zawierającej klasę agregowaną).
 
-<PanelAccept>Agregacja będzie na ogół występować gdy w klasie posiadamy atrybut obiektu agregowanego, który pod względem cyklu życia nie jest ściśle związany z obiektem swojego właściciela (obiekty mogą istnieć niezależnie od siebie). Po usunięciu obiektu agregującego, obiekt agregowany nadal może istnieć.
-</PanelAccept>
+>Accept: Agregacja będzie na ogół występować gdy w klasie posiadamy atrybut obiektu agregowanego, który pod względem cyklu życia nie jest ściśle związany z obiektem swojego właściciela (obiekty mogą istnieć niezależnie od siebie). Po usunięciu obiektu agregującego, obiekt agregowany nadal może istnieć.
 
-<PanelWarning>Jeśli spotkasz się z określeniem `agregacja` bez skonkretyzowania czy jest to agregacja częściowa czy całkowita, będzie to oznaczać, że jest to agregacja częściowa.
-</PanelWarning>
+>Warning: Jeśli spotkasz się z określeniem `agregacja` bez skonkretyzowania czy jest to agregacja częściowa czy całkowita, będzie to oznaczać, że jest to agregacja częściowa.
 
 Niniejszy przykład przedstawia relacje między osobą a jej adresem zamieszkania. Osoba posiada adres zamieszkania a więc agreguje go - dlatego grot jest po stronie klasy `Person`. Jednak człowiek nie jest na stałe przypisany do jednego adresu przez całe swoje życie. Może się przeprowadzić a nawet zostać bezdomnym :D Więc nie jesteśmy tutaj na stałe związani z adresem. Z drugiej jednak strony, pod jednym adresem zamieszkania może mieszkać kilka osób, stąd też adres po wyprowadzce jednego z domowników nadal będzie miał swoich mieszkańców. Pójdźmy nawet dalej, powiedzmy że wszyscy się wyprowadzili spod wskazanego adresu – budynek nadal będzie stał, więc adres nadal będzie obowiązywał. Widzimy tutaj jak i jeden i drugi obiekt może istnieć bez siebie rozłącznie. O tym właśnie mówi nam koncepcja agregacji częściowej (w skrócie agregacji).
 
@@ -542,11 +539,9 @@ Agregacja całkowita jest to swego rodzaju odmiana asocjacji – jej najmocniejs
 
 Notacja kompozycji to linia asocjacyjna z wypełnionym rombem po stronie właściciela obiektu agregowanego.
 
-<PanelAccept>O kompozycji będziemy mówić gdy jeden obiekt jest wyłącznym właścicielem innego. Przy kompozycji na ogół klasa właściciela posiada w argumentach prywatny atrybut przechowujący obiekt agregowany oraz posiada w swojej implementacji sposób tworzenia tych obiektów. Klasa agregowana nie może żyć bez swojego właściciela.
-</PanelAccept>
+>Accept: O kompozycji będziemy mówić gdy jeden obiekt jest wyłącznym właścicielem innego. Przy kompozycji na ogół klasa właściciela posiada w argumentach prywatny atrybut przechowujący obiekt agregowany oraz posiada w swojej implementacji sposób tworzenia tych obiektów. Klasa agregowana nie może żyć bez swojego właściciela.
 
-<PanelWarning>Jeśli spotkasz się z określeniem `kompozycja` w kontekście relacji, będzie to oznaczać, że jest to agregacja całkowita.
-</PanelWarning>
+>Warning: Jeśli spotkasz się z określeniem `kompozycja` w kontekście relacji, będzie to oznaczać, że jest to agregacja całkowita.
 
 Kompozycję możemy przedstawić na przykładzie książki telefonicznej. Książka telefoniczna zawiera w sobie strony, jest ich właścicielem. Jednocześnie jeśli zniszczymy książkę strony również ulegną zniszczeniu – możemy ją dla przykładu spalić, raczej wątpliwe żeby jakieś strony się uchowały :D Strony nie mogą istnieć bez książki, a nawet jeśli, straciły by wtedy kontekst a tym samym swoją wartość. 
 
@@ -596,8 +591,7 @@ Mówiąc o kompozycji jak i o każdym rodzaju asocjacji – możemy nadawać war
 
 Relacja dziedziczenia wskazuje na rozszerzanie obiektów, co sprawia że współdzielą swoje funkcjonalności. Jest to najsilniejsza z wszystkich relacji. Dziedziczenie w UML zobrazowane jest przy pomocy strzałki z pustym grotem na jej końcu, grot wskazuje na rozszerzaną klasę.
 
-<PanelAccept>Używana przy dziedziczeniu. 
-</PanelAccept>
+>Accept: Używana przy dziedziczeniu. 
 
 ![Diagram klas obrazujący dziedziczenie](/ekonomicznykod/images/uml/class-diagram/inheritance.jpg "Diagram klas obrazujący dziedziczenie")
 
@@ -622,8 +616,7 @@ class Dog : Animal()
 
 Gdy mamy jakiś interface i chcemy wskazać, że któraś z klas implementuje jego funkcjonalność używamy podobnej notacji co w przypadku dziedziczenia z tą różnicą, że tutaj linia prowadząca strzałkę będzie przerywana.
 
-<PanelAccept>Używana w przypadku chęci wskazania, że jakaś klasa implementuje nasz interfejs.
-</PanelAccept>
+>Accept: Używana w przypadku chęci wskazania, że jakaś klasa implementuje nasz interfejs.
 
 ![Diagram klas obrazujący implementacje interfejsu](/ekonomicznykod/images/uml/class-diagram/implementation.jpg "Diagram klas obrazujący implementacje interfejsu")
 
@@ -810,8 +803,7 @@ class OuterClass {
 
 UML w swojej notacji opisuje zbiór standardowych stereotypów. Stereotypy są predefiniowane w specyfikacji UML. Każdy stereotyp umieszczany jest między znacznikami `«...»` a nazwa stereotypu pisana jest dużą literą. Stereotypy mogą być stosowane w różnych kontekstach i mają swoje przeznaczenie oraz opis, przykładami stereotypu może być `«Instantiate»`, `«Entity»`, `«Type»`, `«Library»`, `«Process»`, `«Script»`. Pełną listę wraz z ich przeznaczeniem i opisem znajdziesz w [oficjalnej specyfikacji UML](https://www.omg.org/spec/UML/2.5.1/PDF#%5B%7B%22num%22%3A2829%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C99.9%2C735.3%2C0%5D).
 
-<PanelWarning>Znaczniki `«…»` nie są zarezerwowane wyłącznie dla stereotypów, można w nich umieszczać również słówka kluczowe, należy jednak pamiętać aby pisać je z małych liter.
-</PanelWarning>
+>Warning: Znaczniki `«…»` nie są zarezerwowane wyłącznie dla stereotypów, można w nich umieszczać również słówka kluczowe, należy jednak pamiętać aby pisać je z małych liter.
 
 `«interface»` - słówko kluczowe  
 `«Service»` - stereotyp

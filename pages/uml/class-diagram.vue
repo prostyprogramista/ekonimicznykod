@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { wrapLiElements, buildMultipleCodeBlock } from '@/scripts/modify.pages.js';
+import { wrapLiElements, buildMultipleCodeBlock, buildPanels } from '@/scripts/modify.pages.js';
 
 export default {
   async asyncData({ $content }) {
@@ -23,6 +23,7 @@ export default {
   },
   mounted() {
     wrapLiElements()
+    buildPanels()
     buildMultipleCodeBlock()
   },
 };

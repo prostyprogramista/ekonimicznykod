@@ -106,3 +106,93 @@ export function buildMultipleCodeBlock() {
         }
     });
 }
+
+export function buildPanels() {
+    const blockquotes = [...document.body.getElementsByTagName(
+        'blockquote'
+    )];
+
+    for(let i = 0; i < blockquotes.length; i++) {
+        const block = blockquotes[i]
+        const parent = block.parentNode
+
+        const isAccept = block.outerText.startsWith('Accept:')
+        const isInfo = block.outerText.startsWith('Info:')
+        const isWarning = block.outerText.startsWith('Warning:')
+        const isError = block.outerText.startsWith('Error:')
+        
+        let panelType
+
+        if(isAccept) {
+            panelType = 'accept'
+        }
+        if(isInfo) {
+            panelType = 'info'
+        }
+        if(isWarning) {
+            panelType = 'warning'
+        }
+        if(isError) {
+            panelType = 'error'
+        }
+
+        if(panelType !== undefined) {
+            removePhraseFromNode(block.childNodes, `${panelType.charAt(0).toUpperCase() + panelType.slice(1)}:`)
+
+            const panel = createPanel(panelType, block.childNodes)
+            parent.replaceChild(panel, block)
+        }
+    }
+}
+
+function createPanel(type, contentNodes) {
+    const mainContainer = document.createElement('div')
+
+    //icon
+    const iconContainer = document.createElement('div')
+    const iconBackground = document.createElement('div')
+    const iconShadow = document.createElement('div')
+    const icon = document.createElement('img')
+    //content
+    const contentContainer = document.createElement('div')
+    const contentParagraph = document.createElement('p')
+    
+    //added classes
+    mainContainer.classList.add('panel', type)
+    iconContainer.classList.add('icon', type)
+    iconBackground.classList.add(type + '-icon-background')
+    iconShadow.classList.add(type + '-icon-shadow')
+    icon.classList.add(type + '-icon')
+    contentContainer.classList.add('content')
+
+    //icon
+    iconShadow.appendChild(icon)
+    iconBackground.appendChild(iconShadow)
+    iconContainer.appendChild(iconBackground)
+    mainContainer.appendChild(iconContainer)
+
+    //content
+    contentParagraph.append(...contentNodes)
+    contentContainer.appendChild(contentParagraph)
+    mainContainer.appendChild(contentContainer)
+
+    return mainContainer
+}
+
+function removePhraseFromNode(nodes, phrase) {
+    for(let i = 0; i < nodes.length; i++) {
+        const node = nodes[i]
+        
+        if(node.nodeName == '#text') {
+            if(node.nodeValue.startsWith(phrase)) {
+                node.nodeValue = node.nodeValue.replace(phrase, '')
+
+                return
+            }
+        } else {
+            if(node.childNodes.length > 0) {
+                removePhraseFromNode(node.childNodes, phrase)
+            }
+        }
+    }
+}
