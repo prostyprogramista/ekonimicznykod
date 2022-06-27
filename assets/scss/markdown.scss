@@ -163,19 +163,19 @@
         background-color: $grey-light;
 
         * {
-            padding-left: 40px;
-            padding-right: 40px;
+            padding-left: 2.75rem;
+            padding-right: 2.75rem;
         }
 
         &::before {
             display: flex;
-            height: 40px;
+            height: 2.75rem;
             content: url('~/assets/icons/apostrophe.svg');
         }
 
         &::after {
             display: flex;
-            height: 40px;
+            height: 2.75rem;
             content: url('~/assets/icons/apostrophe.svg');
             justify-content: end;
         }
