@@ -384,27 +384,3 @@
         }
     }
 }
-
-@-moz-document url-prefix(){
-    .nuxt-content {
-        // quote
-        blockquote {    
-            &::before {
-                display: flex;
-                
-                height: 3.5rem;
-
-                content: url('~/assets/icons/apostrophe.svg');
-            }
-    
-            &::after {
-                display: flex;
-                justify-content: end;
-
-                height: 3.5rem;
-                
-                content: url('~/assets/icons/apostrophe.svg');
-            }
-        }
-    }
-}
