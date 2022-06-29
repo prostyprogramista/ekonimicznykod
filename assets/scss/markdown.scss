@@ -162,21 +162,28 @@
         background-color: $grey-light;
 
         * {
-            padding-left: 2.75rem;
-            padding-right: 2.75rem;
+            padding: 0px;
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
         }
 
         &::before {
             display: flex;
-            height: 2.75rem;
+
+            zoom: 70%;
+            height: 3.5rem;
+
             content: url('~/assets/icons/apostrophe.svg');
         }
 
         &::after {
             display: flex;
-            height: 2.75rem;
-            content: url('~/assets/icons/apostrophe.svg');
             justify-content: end;
+
+            zoom: 70%;
+            height: 3.5rem;
+
+            content: url('~/assets/icons/apostrophe.svg');
         }
     }
 
@@ -373,6 +380,30 @@
                             box-shadow: none;
                         }
                 }
+            }
+        }
+    }
+}
+
+@-moz-document url-prefix(){
+    .nuxt-content {
+        // quote
+        blockquote {    
+            &::before {
+                display: flex;
+                
+                height: 3.5rem;
+
+                content: url('~/assets/icons/apostrophe.svg');
+            }
+    
+            &::after {
+                display: flex;
+                justify-content: end;
+
+                height: 3.5rem;
+                
+                content: url('~/assets/icons/apostrophe.svg');
             }
         }
     }
