@@ -47,6 +47,28 @@ html {
 			font-size: 1.75rem;
 			line-height: $header-line-height;
 		}
+
+		section {
+			padding: 15px;
+
+			h1 {
+				font-family: 'Ubuntu Condensed', sans-serif;
+				font-size: 2.25rem;
+				line-height: $header-line-height;
+			}
+
+			h2 {
+				font-family: 'Ubuntu Condensed', sans-serif;
+				font-size: 2rem;
+				line-height: $header-line-height;
+			}
+
+			h3 {
+				font-family: 'Ubuntu Condensed', sans-serif;
+				font-size: 1.75rem;
+				line-height: $header-line-height;
+			}
+		}
 	}
 }
 
@@ -66,6 +88,10 @@ html {
 		margin-right: 0px;
 
 		grid-template-columns: repeat(12, 1fr);
+		
+		section {
+			padding: 0;
+		}
 	}
 }
 

@@ -13,7 +13,7 @@
 
     <main class="index">
       <section class="index-page">
-        <h1>Co znajdziesz na blogu?</h1>
+        <h1>Co u nas znajdziesz?</h1>
         <p>
           <b>Wiodącą ideą bloga jest dzielenie się zdobywaną wiedzą. </b>
         </p>

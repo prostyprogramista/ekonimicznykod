@@ -53,13 +53,12 @@
 }
 
 .index-page {
-    padding: 10px;
-
     h1 {
         text-transform: uppercase;
         display: flex;
         flex-direction: column;
         margin-top: 2%;
+        margin-bottom: 10px;
     }
 
     h1:after {
@@ -143,9 +142,7 @@
         }
     }
 
-    .index-page {
-        padding: 0;
-        
+    .index-page {        
         grid-column: 2 / -2;
 
         h1:after {
