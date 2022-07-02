@@ -192,10 +192,8 @@ Metody umieszczane są w kolejnej sekcji. Żądzą się one podobnymi regułami 
 - Metody abstrakcyjne pisane są kursywą
 - Dodatkowe właściwości ujęte są między klamrami na końcu
 
-
 Ogólna deklaracja:  
 `modifier name`(`parametrName`: `parametrType`): `returnType` { `properties` }
-  <!-- **TODO** - Przykład do powyższego założenia  -->
 
 `modifier` – modyfikator dostępu  
 `name` – nazwa metody/funkcji  
