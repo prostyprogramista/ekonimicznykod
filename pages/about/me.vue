@@ -54,9 +54,9 @@
           </h2>
           <p>
             Czy jest coś bardziej fascynującego niż człowiek? Moim zdaniem nie. Interesuje mnie wszystko co jest  z nim związane, zarówno od strony fizycznej jak i psychicznej. 
-            Fascynuje mnie to jak świetnie potrafimy adaptować się niemalże do każdych warunków.  Ciekawi mnie anatomia człowieka – to jak jest zbudowany, jakie procesy chemiczne i 
-            biologiczne zachodzą w jego środku oraz to co wpływa na nas pozytywnie a co nam szkodzi. Pasjonująca jest też sama psychika człowieka, jego złożoność i unikalność każdego z 
-            nas. Jednocześnie ciekawie jest odkrywać i poznawać mechanizmy wpływające na nasze zachowania i reakcje.
+            Fascynuje mnie to jak świetnie potrafimy adaptować się niemalże do każdych warunków.  Ciekawi mnie jego anatomia – to jak jest zbudowany, jakie procesy biologiczne i 
+            chemiczne zachodzą w jego wnętrzu oraz to co wpływa na nas pozytywnie a co nam szkodzi. Pasjonująca jest też sama psychika człowieka, jego złożoność i unikalność każdego z 
+            nas. Jednocześnie odkrywanie mechanizmów wpływających na nasze zachowania i reakcje jest niesamowicie ciekawe.
           </p>
       </section>
     </main>

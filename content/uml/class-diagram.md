@@ -814,6 +814,6 @@ Mam nadzieję, że przedstawiony post nieco przybliżył Ci tajniki związane z 
 
 Pragnę jeszcze raz zaznaczyć, że z diagramem klas nie należy przesadzać. Często rozpisywanie najdrobniejszych szczegółów w UML może okazać się stratą czasu a nawet niepotrzebnym skomplikowaniem zaciemniającym tylko naszą intencję zobrazowania oczekiwanego rezultatu. UML jest tylko narzędziem a jak każde narzędzie zostało stworzone po to aby nam ułatwiać a nie komplikować pracę. 
 
-Jeśli chcesz sprawdzić moje pozostałe wpisy o notacji UML możesz je znaleźć **TODO** » tutaj «  
+Jeśli chcesz sprawdzić moje pozostałe wpisy o notacji UML możesz je znaleźć [» tutaj «](https://prostyprogramista.github.io/ekonomicznykod/ostatnie/?category=uml)  
 
 Natomiast jeśli chciałbyś abym opisał inny rodzaj diagramu UML napisz o tym proszę w komentarzu :)
