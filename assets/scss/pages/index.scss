@@ -53,6 +53,8 @@
 }
 
 .index-page {
+    padding: 10px;
+
     h1 {
         text-transform: uppercase;
         display: flex;
@@ -142,6 +144,8 @@
     }
 
     .index-page {
+        padding: 0;
+        
         grid-column: 2 / -2;
 
         h1:after {
