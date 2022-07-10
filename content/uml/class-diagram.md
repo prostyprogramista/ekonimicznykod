@@ -2,13 +2,17 @@
 id: 91f55a50-8b5a-49ad-9132-18cc93dc69d9
 title: UML - Diagram klas
 description: |
-    W tym artykule dowiemy się czym jest diagram klas, w jakich sytuacjach możemy go używać i w czym może nam pomóc.
-img: images/header/header-big-2.jpg
+    W tym artykule dowiesz się czym jest diagram klas, w jakich sytuacjach możesz go używać i w czym może Ci pomóc.
+img: images/header/header-big.jpg
+created_at: '2022-05-28'
+modified_at: '2022-07-02'
+author_first_name: Andrzej
+author_last_name: Kwiatkowski
 route: 
     path: /uml/diagram-klas
 categories: 
-    - uml
-hash-tags: 
+    - UML
+tags: 
     - projektowanie
     - architektura
     - teoria

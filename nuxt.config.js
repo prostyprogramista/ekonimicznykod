@@ -43,6 +43,7 @@ export default {
     '@/assets/scss/main.scss', 
     '@/assets/scss/panel.scss', 
     '@/assets/scss/pages/index.scss',
+    '@/assets/scss/pages/latest.scss',
     '@/assets/scss/pages/about/me.scss',
     '@/assets/scss/pages/about/blog.scss',
   ],

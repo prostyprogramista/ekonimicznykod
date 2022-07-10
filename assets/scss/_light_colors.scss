@@ -3,6 +3,8 @@ $text-color-light: rgb(75, 75, 75);
 $text-color-contrast: rgb(245, 245, 245);
 $text-color-contrast-light: rgb(200, 200, 200);
 
+$filter-text-color-light: invert(26%) sepia(9%) saturate(3%) hue-rotate(84deg) brightness(98%) contrast(87%);
+
 $orange-light: #ffb74d;
 $orange-medium: #ff9800;
 $orange-hightlight: #FF7F00;
