@@ -54,7 +54,7 @@
                     class="category"
                     v-for="category of article.categories"
                     :key="category"
-                    :href="'/ostatnie?category=' + category"
+                    :href="'/ekonomicznykod/ostatnie?category=' + category"
                   >
                     {{ category }}
                   </a>
@@ -64,7 +64,7 @@
                     class="tag"
                     v-for="tag of article.tags"
                     :key="tag"
-                    :href="'/ostatnie?tag=' + tag"
+                    :href="'/ekonomicznykod/ostatnie?tag=' + tag"
                   >
                     <i>#</i>{{ tag }}
                   </a>
