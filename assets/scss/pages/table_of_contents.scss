@@ -1,0 +1,46 @@
+@import '~/assets/scss/light_colors';
+@import '~/assets/scss/global_variables';
+@import '~/assets/scss/animations';
+
+main {
+    .table-of-contents {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        h2 {
+            margin-top: 7px;
+            margin-bottom: 7px;
+            font-size: 1.75rem;
+        }
+
+        .content {
+            
+        }
+            
+
+
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .table-of-contents {
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        .table-of-contents {
+            grid-column: 2 / -2;
+        }
+    }
+}

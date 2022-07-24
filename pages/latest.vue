@@ -4,13 +4,15 @@
       <h1>Ostatnie</h1>
       <div v-for="article of articles" :key="article">
         <div class="panel">
-          <div class="image">
+          <NuxtLink class="image" :to="article.route.path">
             <img v-if="article.img" :src="article.img" />
             <img v-else src="~/static/images/header/empty.jpg" />
-          </div>
+          </NuxtLink>
           <div class="content">
-            <h2 class="title">{{ article.title }}</h2>
-            <p class="description">{{ article.description }}</p>
+            <NuxtLink class="post" :to="article.route.path">
+              <h2 class="title">{{ article.title }}</h2>
+              <p class="description">{{ article.description }}</p>
+            </NuxtLink>
             <div class="details">
               <div class="specification">
                 <div class="left">

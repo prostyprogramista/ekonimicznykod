@@ -814,8 +814,8 @@ UML w swojej notacji opisuje zbiór standardowych stereotypów. Stereotypy są p
 
 Mam nadzieję, że przedstawiony post nieco przybliżył Ci tajniki związane z diagramem klas. Zdaję sobie sprawę, że w powyższym wpisie nie zgłębiłem całkowicie wszystkich aspektów związanych z tym tematem. Jednak uważam, że informacje zawarte w tym artykule pozwolą każdemu opanować tajniki diagramu klas na dość dobrym poziomie co przełoży się na zrozumienie oraz samodzielne tworzenie poprawnych diagramów klas. Diagram klas może okazać się bardzo przydatny przy projektowaniu nowoczesnych aplikacji i systemów informatycznych, dlatego też zachęcam do jego korzystania. Często wcześniejsze rozpisanie sobie oczekiwanej architektury może uwidocznić nam problemy, których na pierwszy rzut oka można nie zauważyć, będzie się to przekładać na zaoszczędzony czas już na etapie implementacji aplikacji. 
 
-Pragnę jeszcze raz zaznaczyć, że z diagramem klas nie należy przesadzać. Często rozpisywanie najdrobniejszych szczegółów w UML może okazać się stratą czasu a nawet niepotrzebnym skomplikowaniem zaciemniającym tylko naszą intencję zobrazowania oczekiwanego rezultatu. UML jest tylko narzędziem a jak każde narzędzie zostało stworzone po to aby nam ułatwiać a nie komplikować pracę. 
+Pragnę jeszcze raz zaznaczyć, że z diagramem klas nie należy przesadzać. Często rozpisywanie najdrobniejszych szczegółów w UML może okazać się stratą czasu a nawet niepotrzebnym skomplikowaniem zaciemniającym tylko naszą intencję. UML jest tylko narzędziem a jak każde narzędzie zostało stworzone po to aby nam ułatwiać a nie komplikować pracę. 
 
-Jeśli chcesz sprawdzić moje pozostałe wpisy o notacji UML możesz je znaleźć [» tutaj «](https://prostyprogramista.github.io/ekonomicznykod/ostatnie?category=uml)  
+Jeśli chcesz sprawdzić moje pozostałe wpisy o notacji UML możesz je znaleźć [» tutaj «](https://prostyprogramista.github.io/ekonomicznykod/ostatnie?category=UML)  
 
 Natomiast jeśli chciałbyś abym opisał inny rodzaj diagramu UML napisz o tym proszę w komentarzu :)

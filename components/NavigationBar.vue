@@ -13,9 +13,9 @@
 
       <div class="links" v-bind:class="{ display: isActive }">
         <NuxtLink v-on:click.native="handleNavigationBar" to="/ostatnie">Najnowsze</NuxtLink>
-        <NuxtLink v-on:click.native="handleNavigationBar" to="/jakis-tam-routing">Spis treści</NuxtLink>
-        <NuxtLink v-on:click.native="handleNavigationBar" to="/biblioteczka">Literatura</NuxtLink>
-        <NuxtLink v-on:click.native="handleNavigationBar" to="/">Inne</NuxtLink>
+        <NuxtLink v-on:click.native="handleNavigationBar" to="/spis-tresci">Spis treści</NuxtLink>
+        <NuxtLink v-on:click.native="handleNavigationBar" to="/o-mnie">O mnie</NuxtLink>
+        <NuxtLink v-on:click.native="handleNavigationBar" to="/o-blogu">O blogu</NuxtLink>
         <NuxtLink v-on:click.native="handleNavigationBar" to="/kontakt">Kontakt</NuxtLink>
       </div>
 

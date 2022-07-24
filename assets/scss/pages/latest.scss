@@ -8,9 +8,12 @@ main {
         margin-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
-        
-        
-    box-shadow: 5px 0px 5px -8px $shadow-color, -5px 0px 5px -8px $shadow-color;
+
+        box-shadow: 5px 0px 5px -8px $shadow-color, -5px 0px 5px -8px $shadow-color;
+
+        * {
+            text-decoration: none;
+        }
 
         h1 {
             text-align: center;
@@ -50,7 +53,7 @@ main {
                     display: grid;
 
                     grid-template-columns: 1fr;
-                    grid-template-rows: auto auto auto;
+                    grid-template-rows: auto auto;
 
                     div.details {
                         margin-top: 10px;
@@ -134,7 +137,6 @@ main {
                                     padding-left: 3px;
                                     padding-right: 3px;
 
-                                    text-decoration: none;
                                     text-transform: uppercase;
                                     font-weight: bold;
 
@@ -156,8 +158,6 @@ main {
                                     padding-left: 3px;
                                     padding-right: 3px;
 
-                                    text-decoration: none;
-
                                     border-radius: 3px;
                                     background-color: #f2f2f2;
                                 }
@@ -175,12 +175,14 @@ main {
 @media (min-width: 768px) {
     main {
         .latest-posts {
+            padding-left: 20px;
+            padding-right: 20px;
 
             div {
                 div.panel {
                     display: grid;
 
-                    grid-template-columns: 1fr 3fr;
+                    grid-template-columns: 1fr 2fr;
 
                     .image {
                         grid-column: 1;

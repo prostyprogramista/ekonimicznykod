@@ -44,6 +44,7 @@ export default {
     '@/assets/scss/panel.scss', 
     '@/assets/scss/pages/index.scss',
     '@/assets/scss/pages/latest.scss',
+    '@/assets/scss/pages/table_of_contents.scss',
     '@/assets/scss/pages/about/me.scss',
     '@/assets/scss/pages/about/blog.scss',
   ],

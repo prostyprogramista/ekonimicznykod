@@ -29,10 +29,10 @@
             <b><NuxtLink to="/ostatnie"># Najnowsze</NuxtLink></b> -  znajdziesz tam wszystkie ostatnio opublikowane posty. </br>
             <b><NuxtLink to="/spis-tresci"># Spis treści</NuxtLink></b> -  w tej sekcji znajdują się wsyzstkie artykuły związane z szerokopojętym programowaniem, upożądkowane tematycznie. </br>
             <!-- <b><NuxtLink to="/literatora"># Literatura</NuxtLink></b> - ta sekcja poświęcona jest książkom, które przeczytałem i uważam, że warto lub nie je polecać. Każda opisywana tam pozycja została okroszona moimi osobistymi wrażeniami z lektury. </br> -->
-            <b><NuxtLink to="/inne"># Inne</NuxtLink></b> - zawiera dodatkowe podsekcje związane głównie z moimi zainteresowaniami. </br>
-            <b><NuxtLink to="/kontakt"># Kontakt</NuxtLink></b> -  sekcja zawierająca informacje kontaktowe. </br>
+            <!-- <b><NuxtLink to="/inne"># Inne</NuxtLink></b> - zawiera dodatkowe podsekcje związane głównie z moimi zainteresowaniami. </br> -->
             <b><NuxtLink to="/o-mnie"># O mnie</NuxtLink></b> -  chcesz dowiedzieć się czegoś więcej o mnie? Tutaj znajdziesz podstawowe informacje i motywacje mną kierujące. </br>
             <b><NuxtLink to="/o-blogu"># O blogu</NuxtLink></b> -  zawiera kilka głównych informacji na temat bloga. </br>
+            <b><NuxtLink to="/kontakt"># Kontakt</NuxtLink></b> -  sekcja zawierająca informacje kontaktowe. </br>
           </ul>
         </p>
       </section>
