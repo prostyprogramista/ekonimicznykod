@@ -12,7 +12,7 @@
             Komercyjnie w branży IT siedzę od 2017 roku, jednak przygodę z programowaniem zacząłem już nieco wcześniej. Przed rozpoczęciem pierwszej pracy jako programista pomagałem w kilku 
             projektach studenckich realizowanych na zaliczenie. Dzięki temu miałem okazję poznać wiele kierunków programowania od kuchni (nie tylko z mojej specjalizacji). W tym okresie 
             zdecydowanie najciekawszym doświadczeniem było programowanie własnych gier w silniku Unity3D przy wykorzystaniu C# jako języka skryptowego. Możliwość zagrania we własną 
-            grę, w której rozstrzeliwano i wysadzano granatami hordy zombi – bezcenne :D
+            grę, w której można wyżyć się na hordach zombi, rozstrzeliwując i wysadzając je granatami – bezcenne :D
           </p>
           <p>
             No ale nie samym programowaniem człowiek żyje :) Poza programowaniem interesuję się również kilkoma innymi dziedzinami.
