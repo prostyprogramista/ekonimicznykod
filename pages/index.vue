@@ -19,8 +19,8 @@
         </p>
         <p>
           Na blogu publikowane są głównie posty związane z szerokopojętym programowaniem. Back-end, front-end, bazy danych, architektura, wzorce projektowe? Jasne! 
-          Wszystkie te tematy są tu poruszane! Ocziwiście blog nie jest zamknięty wyłacznie w ramach technicznych.
-          Poruszane są tutaj również tematy miękkie takie jak relacje, skuteczna komunikacja, samorozwój a także inne około programistyczne zagadnienia. 
+          Wszystkie te tematy mogą się tutaj znaleźć! Ocziwiście blog nie jest zamknięty wyłacznie w ramach technicznych.
+          Poruszane są również zagadnienia miękkie takie jak relacje, skuteczna komunikacja, samorozwój a także inne około programistyczne zagadnienia. 
           Sporadycznie na blogu mogą również pojawiać się tematy odbiegające od programowania - związane głównie z moimi zainteresowaniami :)
         </p>
         <p>
