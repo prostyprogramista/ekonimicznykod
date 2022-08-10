@@ -56,7 +56,7 @@
                     :key="category"
                     :href="'/ekonomicznykod/ostatnie?category=' + category"
                   >
-                    {{ category }}
+                    {{ category.replace("_", " ") }}
                   </a>
                 </div>
                 <div class="tags">
@@ -66,7 +66,7 @@
                     :key="tag"
                     :href="'/ekonomicznykod/ostatnie?tag=' + tag"
                   >
-                    <i>#</i>{{ tag }}
+                    <i>#</i>{{ tag.replace("_", " ") }}
                   </a>
                 </div>
               </div>
