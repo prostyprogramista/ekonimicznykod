@@ -27,7 +27,7 @@ Powszechnie mówi się o zasadzie `DRY`, jako o zasadzie niezezwalającej na kop
 
 Myśląc o zasadzie `DRY`, powinno się bardziej myśleć jako o zaprzestaniu powielania wiedzy powiązanej z funkcjonalnością aniżeli stricte kopiowania kodu. W końcu kod powstaje na podstawie wiedzy i wymagań opisujących oczekiwania użytkownika końcowego. Czyli tego co ma dana aplikacja robić. Bez takiej wiedzy jest niemożliwe tworzenie oprogramowania. Bo niby skąd mielibyśmy wiedzieć w jakim kierunku należy rozwijać aplikację, skoro nawet nie mamy pojęcia co ona ma robić? 
 
-Def: Każdy kawałek kodu opisujący jakiś wycinek wiedzy na konkretny temat, musi mieć dokładnie jedną, powszechnie znaną reprezentację w ramach tworzonej aplikacji.
+> Info: <dfn>Każdy kawałek kodu opisujący jakiś wycinek wiedzy na konkretny temat, musi mieć dokładnie jedną, powszechnie znaną reprezentację w ramach tworzonej aplikacji.</dfn>
 
 No dobra, ale czy to i tak nie wychodzi na to samo? 
 
