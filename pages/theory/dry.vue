@@ -8,7 +8,7 @@
     <article>
       <nuxt-content :document="article" />
     </article>
-    <!-- <Chat title="Zasada DRY" id="/theory/dry" /> -->
+    <GithubChat :id="article.id" :name="article.title" :uri="article.route.path" />
   </main>
 </template>
 
@@ -16,6 +16,7 @@
 import { wrapLiElements, buildMultipleCodeBlock, buildPanels } from '@/scripts/modify.pages.js';
 
 export default {
+  props: ["id", "title", "route.path"],  
   async asyncData({ $content }) {
     const article = await $content('theory/dry').fetch();
 

@@ -3,7 +3,7 @@
     <div class="latest-posts">
       <h1>Ostatnie</h1>
       <div v-for="article of articles" :key="article">
-        <div class="panel">
+        <div :id="article.id" class="panel">
           <NuxtLink class="image" :to="article.route.path">
             <img v-if="article.img" :src="article.img" />
             <img v-else src="~/static/images/header/empty.jpg" />
@@ -33,14 +33,14 @@
                 </div>
                 <div class="right">
                   <div>
-                    <p>3341</p>
+                    <p> - </p>
                     <img
                       src="~/static/icons/latest/eye-refresh-outline.svg"
                       title="Wyświetlono"
                     />
                   </div>
                   <div>
-                    <p>341</p>
+                    <p> - </p>
                     <img
                       src="~/static/icons/latest/message-processing-outline.svg"
                       title="Skomentowano"
@@ -104,10 +104,18 @@ export default {
     }
 
     articles = await articles.sortBy("createdAt", "desc").fetch();
+    
+    getStatistics(articles)
 
     return { articles };
   },
 };
+
+async function getStatistics(articles) {
+  await new Promise(resolve => setTimeout(resolve, 2000))
+
+  console.log("dupa")
+}
 
 function getQueryParameters() {
   let queryParameters = {};
