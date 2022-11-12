@@ -35,26 +35,26 @@ No nie do końca. Weźmy za przykład rejestracje użytkownika w sklepie interne
 
 ```java
 public boolean validatePhoneNumber(String value) {
-    return value.matches("[^a-zA-Z]+");
+    return value.matches("^\\d{1,}(-\\d{1,}){0,}$"); // Sprawdza czy podana wartość nie jest pusta i czy zawiera liczby, które mogą być oddzielone myślnikiem.
 }
 
 public boolean validateZipCode(String value) {
-    return value.matches("[^a-zA-Z]+");
+    return value.matches("^\\d{1,}(-\\d{1,}){0,}$"); // Sprawdza czy podana wartość nie jest pusta i czy zawiera liczby, które mogą być oddzielone myślnikiem.
 }
 ```
 ```kotlin
 fun validatePhoneNumber(value: String): Boolean {
-    return value.matches(Regex.fromLiteral("[^a-zA-Z]+"))
+    return value.matches(Regex.fromLiteral("^\\d{1,}(-\\d{1,}){0,}$")) // Sprawdza czy podana wartość nie jest pusta i czy zawiera liczby, które mogą być oddzielone myślnikiem.
 }
 
 fun validateZipCode(value: String): Boolean {
-    return value.matches(Regex.fromLiteral("[^a-zA-Z]+"))
+    return value.matches(Regex.fromLiteral("^\\d{1,}(-\\d{1,}){0,}$")) // Sprawdza czy podana wartość nie jest pusta i czy zawiera liczby, które mogą być oddzielone myślnikiem.
 }
 ```
 
 Jak widać obie metody weryfikujące poprawność danych posiadają tą samą treść. Tylko czy to znaczy, że została tutaj naruszona zasada `DRY`? Czy powinniśmy utworzyć tutaj tylko jedną weryfikującą metodę wspólną dla obu pól? Otóż nie, co prawda kod wewnętrzny jest identyczny jednak wiedza reprezentująca te funkcje różni się. Te dwie funkcje weryfikują poprawność dwóch, niezwiązanych ze sobą rzeczy, dla których akurat w danym momencie obowiązują te same reguły, a to że mamy tak samo wyglądające metody to tylko zbieg okoliczności. 
 
-W przypadku zmiany wymagań tylko dla jednego z tych pól, moglibyśmy nieświadomie zmienić działanie drugiego co spowodowałoby nieoczekiwane błędy walidacji. Jeśli jednak nawet bylibyśmy uważni i zauważyli powiązania. Mogłoby się okazać, że omawiane walidatory byłyby już używane w bardzo wielu miejscach. Spowodowałoby to dodatkowy nagład pracy na ekstrakcje i podmianę rozwiązań. 
+Jeśli faktycznie wyciągnelibyśmy część wspólną z tych metod to w przypadku zmiany wymagań tylko dla jednej z nich, moglibyśmy nieświadomie zmienić działanie drugiej - co spowodowałoby nieoczekiwane błędy walidacji. Jeśli nawet jeśli bylibyśmy uważni i zauważyli powiązania. Mogłoby się okazać, że omawiane walidatory byłyby już używane w bardzo wielu miejscach. Spowodowałoby to dodatkowy nagład pracy na ekstrakcje i podmianę rozwiązań. 
 
 Ważnym aspektem w podejściu `DRY` jest pamiętanie aby, wiedza na temat istnienia danego rozwiązania była powszechnie znana. Nie tylko przez nas ale również przez pozostałych członków zespołu. Jest to warunek konieczny aby rozwiązania mogłby być dalej propagowane przez wszystkich członków zespołu. 
 
