@@ -757,7 +757,7 @@ W tym przykładzie użyliśmy dwóch typów generycznych, jednego reprezentując
 
 Jeśli chcielibyśmy użyć klas zagnieżdżonych, UML daje nam taką możliwość. Wystarczy w nasz prostokąt wpisać kolejny prostokąt – reprezentujący klasę wewnętrzną. Poniżej przykład.
 
-![Przykład klas zagnieżdżonych przy użyciu diagramu klas](/ekonomicznykod/images/uml/class-diagram/generic-type.jpg "Przykład klas zagnieżdżonych przy użyciu diagramu klas")
+![Przykład klas zagnieżdżonych przy użyciu diagramu klas](/ekonomicznykod/images/uml/class-diagram/nested-class.jpg "Przykład klas zagnieżdżonych przy użyciu diagramu klas")
 
 ```java
 public class OuterClass {
