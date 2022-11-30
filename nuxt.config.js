@@ -48,6 +48,9 @@ export default {
     '@/assets/scss/pages/about/me.scss',
     '@/assets/scss/pages/about/contact.scss',
     '@/assets/scss/pages/about/blog.scss',
+    '@/assets/scss/spinner.scss',
+    '@/assets/scss/chat.scss',
+    '@/assets/scss/opacity.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

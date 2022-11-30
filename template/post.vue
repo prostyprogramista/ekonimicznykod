@@ -8,12 +8,12 @@
     <article>
       <nuxt-content :document="article" />
     </article>
-    <!-- <Chat title="postTitle" id="postRoute" /> -->
+    <Chat :id="article.id" :name="article.title" :uri="article.route.path" />
   </main>
 </template>
 
 <script>
-import { wrapLiElements, buildMultipleCodeBlock, buildPanels } from '@/scripts/modify.pages.js';
+import { wrapLiElements, buildMultipleCodeBlock, buildPanels } from '@/scripts/modify-pages.js';
 
 export default {
   async asyncData({ $content }) {

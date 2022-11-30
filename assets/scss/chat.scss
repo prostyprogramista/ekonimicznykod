@@ -1,19 +1,233 @@
-@import './light_colors';
-
+main {
     .chat {
+        // background-color: #f7f7f7;
         grid-column: 2 / -2;
-        grid-row: 3;
-        
-        margin-top: 5px;
-        margin-bottom: 5px;
+        padding: 10px;
 
-        border-top: 1px solid $separator-line-color;
-        border-bottom: 1px solid $separator-line-color;
-    }
+        div.comment-input-section {
+            .comment-top-lines {
+                display: grid;
+                grid-template-columns: 10px 1fr 10px;
+                grid-template-rows: 6px 3px;
 
-@media (min-width: 768px) {
-    .chat {
-        margin-top: 20px;
-        margin-bottom: 20px;
+                .top-left {
+                    grid-column: 1;
+                    grid-row: 1;
+                    width: 100%;
+                    border-bottom: 1px solid rgb(151, 151, 151);
+                }
+                .top-center {
+                    grid-column: 2;
+                    grid-row: 1;
+                    width: 100%;
+                    border-bottom: 1px solid rgb(151, 151, 151);
+                    border-left: 1px solid rgb(151, 151, 151);
+                    border-right: 1px solid rgb(151, 151, 151);
+                }
+                .top-right {
+                    grid-column: 3;
+                    grid-row: 1;
+                    width: 100%;
+                    border-bottom: 1px solid rgb(151, 151, 151);
+                }
+                .bottom-left {
+                    grid-column: 1;
+                    grid-row: 2;
+                    width: 100%;
+                }
+                .bottom-center {
+                    grid-column: 2;
+                    grid-row: 2;
+                    width: 100%;
+                    border-left: 1px solid rgb(151, 151, 151);
+                    border-right: 1px solid rgb(151, 151, 151);
+                }
+                .bottom-right {
+                    grid-column: 3;
+                    grid-row: 2;
+                    width: 100%;
+                }
+            }
+
+            .comment-actions {
+                padding: 10px;
+                display: flex;
+                // align-items: center;
+                justify-content: center;
+
+                button {
+                    padding: 5px;
+                    margin: 5px;
+                }
+            }
+            width: 100%;
+            padding: 10px;
+
+            textarea {
+                margin-top: 10px;
+
+                width: 100%;
+                height: 28px;
+                min-height: 28px;
+                resize: vertical;
+                transition: height 0.2s;
+                animation-duration: alternate;
+
+            }
+            
+            textarea:focus {
+                height: 50px;
+                border: 2px groove gainsboro;
+                outline: none;
+            }
+
+        }
+
+        div.comment {
+            display: grid;
+            grid-template-areas:
+                "avatar name name"
+                "avatar comment comment";
+            grid-template-columns: 41px 41px 1fr;
+            grid-template-rows: 41px auto;
+
+            .avatar {
+                grid-area: avatar;
+
+                display: grid;
+                grid-template-columns: 21px 20px;
+                grid-template-rows: 41px 1fr;
+
+                img {
+                    grid-row: 1;
+
+                    padding: 4px;
+                    background-color: rgb(245, 245, 245);
+                    border-radius: 25%;
+                    border: 1px solid rgb(151, 151, 151);
+                }
+
+                div {
+                    grid-row: 2;
+                    width: 100%;
+                    height: 100%;
+
+                    &.first {
+                        border-right: 1px solid rgb(151, 151, 151);
+                    }
+                }
+            }
+
+            .name {
+                grid-area: name;
+                width: 100%;
+
+                margin: 10px;
+            }
+
+            .comment {
+                grid-area: comment;
+
+                margin: 10px;
+            }
+        }
+
+        div.answer {
+            display: grid;
+            grid-template-areas:
+                "avatar avatar name"
+                "avatar avatar comment";
+            grid-template-columns: 41px 41px 1fr;
+
+            .avatar {
+                grid-area: avatar;
+                height: 100%;
+
+                display: grid;
+
+                grid-template-columns: 1fr 1fr;
+
+                .first {
+                    grid-column: 1;
+                    display: grid;
+
+                    grid-template-areas:
+                        "top-left top-right"
+                        "bottom-left bottom-right";
+                    grid-template-columns: 20px 21px;
+                    grid-template-rows: 21px auto;
+
+                    div.top-left {
+                        grid-area: top-left;
+                    }
+
+                    div.top-right {
+                        grid-area: top-right;
+
+                        border-bottom: 1px solid rgb(151, 151, 151);
+                        border-bottom-left-radius: 25%;
+                        border-left: 1px solid rgb(151, 151, 151);
+                    }
+
+                    div.bottom-left {
+                        grid-area: bottom-left;
+                    }
+
+                    div.bottom-right {
+                        grid-area: bottom-right;
+
+                        border-left: 1px solid rgb(151, 151, 151);
+                    }
+                }
+
+                .second {
+                    grid-column: 2;
+                    display: grid;
+
+                    grid-template-columns: 21px 20px;
+                    grid-template-rows: 41px auto;
+
+
+                    img {
+                        grid-row: 1;
+
+                        padding: 4px;
+                        background-color: rgb(245, 245, 245);
+                        border-radius: 25%;
+                        border: 1px solid rgb(151, 151, 151);
+                    }
+                }
+            }
+
+            .name {
+                grid-area: name;
+                width: 100%;
+
+                margin: 10px;
+            }
+
+            .comment {
+                grid-area: comment;
+
+                margin: 10px;
+            }
+        }
+
+        .after {
+            display: grid;
+            grid-template-columns: 21px 1fr;
+
+            div {
+                grid-column: 1;
+                width: 100%;
+                height: 2px;
+
+                border-right: 1px solid rgb(151, 151, 151);
+            }
+
+            div.below-twenty  {
+                height: 3px;
+            }
+        }
     }
 }

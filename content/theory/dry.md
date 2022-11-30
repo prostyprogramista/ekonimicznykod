@@ -5,7 +5,7 @@ description: |
     Artykuł opisuje zasadę DRY. Dowiesz się co ona oznacza, jak jej używać oraz jak należy ją prawidłowo interpretować.
 img: images/header/theory/dry/header-dry.jpg
 created_at: '2022-08-10'
-modified_at: '2022-08-10'
+modified_at: '2022-11-12'
 author_first_name: Andrzej
 author_last_name: Kwiatkowski
 route: 
