@@ -593,8 +593,6 @@ Mówiąc o kompozycji jak i o każdym rodzaju asocjacji – możemy nadawać war
 
 Relacja dziedziczenia wskazuje na rozszerzanie obiektów, co sprawia że współdzielą swoje funkcjonalności. Jest to najsilniejsza z wszystkich relacji. Dziedziczenie w UML zobrazowane jest przy pomocy strzałki z pustym grotem na jej końcu, grot wskazuje na rozszerzaną klasę.
 
->Accept: Używana przy dziedziczeniu. 
-
 ![Diagram klas obrazujący dziedziczenie](/ekonomicznykod/images/uml/class-diagram/inheritance.jpg "Diagram klas obrazujący dziedziczenie")
 
 ```java
@@ -617,8 +615,6 @@ class Dog : Animal()
 ### Implementacja interfejsu
 
 Gdy mamy jakiś interface i chcemy wskazać, że któraś z klas implementuje jego funkcjonalność używamy podobnej notacji co w przypadku dziedziczenia z tą różnicą, że tutaj linia prowadząca strzałkę będzie przerywana.
-
->Accept: Używana w przypadku chęci wskazania, że jakaś klasa implementuje nasz interfejs.
 
 ![Diagram klas obrazujący implementacje interfejsu](/ekonomicznykod/images/uml/class-diagram/implementation.jpg "Diagram klas obrazujący implementacje interfejsu")
 
